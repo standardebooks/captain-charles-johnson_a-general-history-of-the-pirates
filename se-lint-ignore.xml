@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se-lint-ignore>
+	<file path="chapter-3.xhtml">
+		<ignore>
+			<code>s-023</code>
+			<reason>to preserve capitalizationg of 'A Proclamation'</reason>
+		</ignore>
+	</file>
+	<file path="chapter-15.xhtml">
+		<ignore>
+			<code>s-038</code>
+			<reason>not an asterism, indicates absent words</reason>
+		</ignore>
+	</file>
+</se-lint-ignore>

@@ -78,3 +78,41 @@ footer{
 table{
 	margin: 1em auto 1em auto;
 }
+
+/* article b{
+	font-size: larger;
+	text-transform: uppercase;
+} */
+.roster{
+	border-spacing: 0;
+}
+
+.roster td{
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+
+.bracket-start{
+	border-radius: 0 1em 0 0;
+	border-right: solid;
+}
+
+.bracket{
+	border-right: solid;
+}
+
+.bracket-end{
+	border-radius: 0 0 1em 0;
+	border-right: solid;
+}
+
+.bracket-both{
+	border-radius: 0 1em 1em 0;
+	border-right: solid;
+}
+
+header{
+	font-variant: small-caps;
+	margin: 1em;
+	text-align: center;
+}
