@@ -12,4 +12,10 @@
 			<reason>not an asterism, indicates absent words</reason>
 		</ignore>
 	</file>
+	<file path="chapter-15.xhtml">
+		<ignore>
+			<code>t-014</code>
+			<reason>table, not end of dialog</reason>
+		</ignore>
+	</file>
 </se-lint-ignore>

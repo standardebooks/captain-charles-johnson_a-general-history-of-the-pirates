@@ -15,74 +15,24 @@ footer{
 	font-variant: small-caps;
 }
 
-[epub|type~="z3998:postscript"]{
-	margin-top: 1em;
-	text-align: initial;
-	text-indent: 0;
-}
-
-[epub|type~="z3998:letter"] header{
-	text-align: right;
-}
-
-footer{
-	margin-top: 1em;
-	text-align: right;
-}
-
-[epub|type~="z3998:salutation"] + p,
-[epub|type~="z3998:letter"] header + p{
+[epub|type~="z3998:salutation"] + p{
 	text-indent: 0;
 }
 
 [epub|type~="z3998:sender"],
-[epub|type~="z3998:recipient"],
 [epub|type~="z3998:salutation"],
 [epub|type~="z3998:signature"]{
 	font-variant: small-caps;
-}
-
-[epub|type~="z3998:postscript"]{
-	margin-top: 1em;
-	text-align: initial;
-	text-indent: 0;
-}
-
-[epub|type~="z3998:letter"] header{
-	text-align: right;
-}
-
-footer{
-	margin-top: 1em;
-	text-align: right;
-}
-
-[epub|type~="z3998:salutation"] + p,
-[epub|type~="z3998:letter"] header + p{
-	text-indent: 0;
-}
-
-[epub|type~="z3998:sender"],
-[epub|type~="z3998:recipient"],
-[epub|type~="z3998:salutation"],
-[epub|type~="z3998:signature"]{
-	font-variant: small-caps;
-}
-
-[epub|type~="z3998:postscript"]{
-	margin-top: 1em;
-	text-align: initial;
-	text-indent: 0;
 }
 
 table{
 	margin: 1em auto 1em auto;
 }
 
-/* article b{
-	font-size: larger;
-	text-transform: uppercase;
-} */
+abbr[epub|type~="se:era"]{
+	font-variant: all-small-caps;
+}
+
 .roster{
 	border-spacing: 0;
 }
@@ -92,21 +42,21 @@ table{
 	padding-right: 0.3em;
 }
 
-.bracket-start{
+.right-bracket-start{
 	border-radius: 0 1em 0 0;
 	border-right: solid;
 }
 
-.bracket{
+.right-bracket{
 	border-right: solid;
 }
 
-.bracket-end{
+.right-bracket-end{
 	border-radius: 0 0 1em 0;
 	border-right: solid;
 }
 
-.bracket-both{
+.right-bracket-both{
 	border-radius: 0 1em 1em 0;
 	border-right: solid;
 }
@@ -115,4 +65,39 @@ header{
 	font-variant: small-caps;
 	margin: 1em;
 	text-align: center;
+}
+
+td p.i1{
+	padding-left: 3em;
+}
+
+.left-bracket-start{
+	border-left: solid;
+	border-radius: 1em 0 0 0;
+}
+
+.left-bracket{
+	border-left: solid;
+}
+
+.left-bracket-end{
+	border-left: solid;
+	border-radius: 0 0 0 1em;
+}
+
+.left-bracket-both{
+	border-left: solid;
+	border-radius: 1em 0 0 1em;
+}
+
+td.over{
+	border-top: solid;
+}
+
+td.right{
+	text-align: right;
+}
+
+ul li{
+	list-style-type: none;
 }
