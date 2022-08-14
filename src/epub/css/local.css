@@ -90,14 +90,23 @@ td p.i1{
 	border-radius: 1em 0 0 1em;
 }
 
-td.over{
-	border-top: solid;
+ul li{
+	list-style-type: none;
 }
 
-td.right{
+td#total-label{
+	padding-right: 1em;
 	text-align: right;
 }
 
-ul li{
-	list-style-type: none;
+td#total-value{
+	border-top: solid;
+}
+
+table > caption{
+	margin-bottom: 0.5em;
+}
+
+table#roster-executed td:nth-of-type(2){
+	text-align: center;
 }
