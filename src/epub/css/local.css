@@ -6,6 +6,12 @@ section{
 	break-after: page;
 }
 
+header{
+	font-variant: small-caps;
+	margin: 1em;
+	text-align: center;
+}
+
 footer{
 	margin-top: 1em;
 	text-align: right;
@@ -29,6 +35,10 @@ table{
 	margin: 1em auto 1em auto;
 }
 
+td p.i1{
+	padding-left: 1.5em;
+}
+
 abbr[epub|type~="se:era"]{
 	font-variant: all-small-caps;
 }
@@ -44,49 +54,39 @@ abbr[epub|type~="se:era"]{
 
 .right-bracket-start{
 	border-radius: 0 1em 0 0;
-	border-right: solid;
+	border-right: 0.15em solid;
 }
 
 .right-bracket{
-	border-right: solid;
+	border-right: 0.15em solid;
 }
 
 .right-bracket-end{
 	border-radius: 0 0 1em 0;
-	border-right: solid;
+	border-right: 0.15em solid;
 }
 
 .right-bracket-both{
 	border-radius: 0 1em 1em 0;
-	border-right: solid;
-}
-
-header{
-	font-variant: small-caps;
-	margin: 1em;
-	text-align: center;
-}
-
-td p.i1{
-	padding-left: 3em;
+	border-right: 0.15em solid;
 }
 
 .left-bracket-start{
-	border-left: solid;
+	border-left: 0.15em solid;
 	border-radius: 1em 0 0 0;
 }
 
 .left-bracket{
-	border-left: solid;
+	border-left: 0.15em solid;
 }
 
 .left-bracket-end{
-	border-left: solid;
+	border-left: 0.15em solid;
 	border-radius: 0 0 0 1em;
 }
 
 .left-bracket-both{
-	border-left: solid;
+	border-left: 0.15em solid;
 	border-radius: 1em 0 0 1em;
 }
 
@@ -104,9 +104,24 @@ td#total-value{
 }
 
 table > caption{
-	margin-bottom: 0.5em;
+	font-size: 110%;
+	margin-bottom: 1em;
 }
 
 table#roster-executed td:nth-of-type(2){
 	text-align: center;
+}
+
+cite{
+	display: inline !important;
+}
+
+th{
+	font-weight: normal;
+}
+
+[epub|type~="z3998:postscript"]{
+	margin-top: 1em;
+	text-align: initial;
+	text-indent: 0;
 }
