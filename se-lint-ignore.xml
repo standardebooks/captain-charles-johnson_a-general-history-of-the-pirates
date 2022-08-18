@@ -6,28 +6,16 @@
 			<reason>empty element necessary to support bracket</reason>
 		</ignore>
 	</file>
-	<file path="chapter-3.xhtml">
-		<ignore>
-			<code>s-023</code>
-			<reason>to preserve capitalizationg of 'A Proclamation'</reason>
-		</ignore>
-	</file>
 	<file path="chapter-4.xhtml">
 		<ignore>
 			<code>s-054</code>
 			<reason>blockquote comprised of paragraphs some of which contain citations</reason>
 		</ignore>
 	</file>
-	<file path="chapter-15.xhtml">
+	<file path="content.opf">
 		<ignore>
-			<code>s-038</code>
-			<reason>not an asterism, indicates absent words</reason>
-		</ignore>
-	</file>
-	<file path="chapter-15.xhtml">
-		<ignore>
-			<code>t-014</code>
-			<reason>table, not end of dialog</reason>
+			<code>x-018</code>
+			<reason>id attributes used to apply style to table</reason>
 		</ignore>
 	</file>
 </se-lint-ignore>
