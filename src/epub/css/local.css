@@ -31,6 +31,12 @@ footer{
 	font-variant: small-caps;
 }
 
+[epub|type~="z3998:postscript"]{
+	margin-top: 1em;
+	text-align: initial;
+	text-indent: 0;
+}
+
 table{
 	margin: 1em auto 1em auto;
 }
@@ -112,20 +118,41 @@ table#roster-executed td:nth-of-type(2){
 	text-align: center;
 }
 
-cite{
+/* cite{
 	display: inline !important;
-}
+} */
 
 th{
 	font-weight: normal;
 }
 
-[epub|type~="z3998:postscript"]{
-	margin-top: 1em;
-	text-align: initial;
-	text-indent: 0;
-}
 
-.inline{
+
+p cite{
 	display: inline;
 }
+
+/* BEGIN FOR PROOFREADING */
+time{
+	border: 1px dotted red;
+}
+
+abbr{
+	color: blue;
+}
+
+/* cite {
+	background-color: aliceblue;
+} */
+
+table, th, td {
+	background-color: aliceblue;
+}
+caption {
+	border: 1px dotted blue;
+}
+blockquote {
+	border: 1px dotted green;
+}
+
+/* END FOR PROOFREADING */
