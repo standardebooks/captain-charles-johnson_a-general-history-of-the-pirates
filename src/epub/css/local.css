@@ -6,6 +6,18 @@ section{
 	break-after: page;
 }
 
+p cite{
+	display: inline;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+[epub|type~="z3998:speech"] ul{
+	padding: 0;
+}
+
 header{
 	font-variant: small-caps;
 	margin: 1em;
@@ -37,122 +49,106 @@ footer{
 	text-indent: 0;
 }
 
-table{
-	margin: 1em auto 1em auto;
-}
-
-td p.i1{
-	padding-left: 1.5em;
-}
-
 abbr[epub|type~="se:era"]{
 	font-variant: all-small-caps;
 }
 
-.roster{
+/* Begin Table Style with Grouping Brackets */
+table{
+	margin: 1em auto 1em auto;
 	border-spacing: 0;
 }
 
-.roster td{
-	padding-left: 0.3em;
-	padding-right: 0.3em;
-}
 
-.right-bracket-start{
-	border-radius: 0 1em 0 0;
-	border-right: 0.15em solid;
-}
 
-.right-bracket{
-	border-right: 0.15em solid;
-}
-
-.right-bracket-end{
-	border-radius: 0 0 1em 0;
-	border-right: 0.15em solid;
-}
-
-.right-bracket-both{
-	border-radius: 0 1em 1em 0;
-	border-right: 0.15em solid;
-}
-
-.left-bracket-start{
-	border-left: 0.15em solid;
-	border-radius: 1em 0 0 0;
-}
-
-.left-bracket{
-	border-left: 0.15em solid;
-}
-
-.left-bracket-end{
-	border-left: 0.15em solid;
-	border-radius: 0 0 0 1em;
-}
-
-.left-bracket-both{
-	border-left: 0.15em solid;
-	border-radius: 1em 0 0 1em;
-}
-
-ul li{
-	list-style-type: none;
-}
-
-td#total-label{
-	padding-right: 1em;
-	text-align: right;
-}
-
-td#total-value{
-	border-top: solid;
-}
-
-table > caption{
+caption{
 	font-size: 1.1em;
 	margin-bottom: 1em;
 }
 
-table#roster-executed td:nth-of-type(2){
-	text-align: center;
-}
-
-/* cite{
-	display: inline !important;
-} */
-
 th{
+	font-size: 1.1em;
 	font-weight: normal;
 }
 
-
-
-p cite{
-	display: inline;
+tbody th{
+	font-size: 1em;
+	padding-bottom: 0.8em;
 }
+
+td p.i1{
+	padding-left: 1em;
+}
+
+table td{
+	border-width: 0.1em;
+}
+
+td.left{
+	border-left-style: solid;
+	padding-left: 0.2em;
+}
+
+td.right{
+	border-right-style: solid;
+}
+
+td.left.start{
+	border-radius: 1em 0 0 0;
+}
+
+td.right.start{
+	border-radius: 0 1em 0 0;
+}
+
+td.right.end{
+	border-radius: 0 0 1em 0;
+}
+
+td.left.end{
+	border-radius: 0 0 0 1em;
+}
+
+td.left.both{
+	border-radius: 1em 0 0 1em;
+}
+
+td.right.both{
+	border-radius: 0 1em 1em 0;
+}
+
+tfoot tr td:nth-child(1){
+	padding-right: 1em;
+	text-align: right;
+}
+
+tfoot tr td:nth-child(2){
+	border-top: 0.1em solid;
+}
+/* End Table Style with Grouping Brackets */
 
 /* BEGIN FOR PROOFREADING */
 time{
-	border: 1px dotted red;
+	border: 2px dotted red;
 }
 
 abbr{
-	color: blue;
+	border: 2px dotted blue;
 }
 
 /* cite {
 	background-color: aliceblue;
 } */
-
-table, th, td {
-	background-color: aliceblue;
+th,
+td{
+	background-color: aliceblue; /* border: 1px dotted red; */
 }
-caption {
+
+caption{
 	border: 1px dotted blue;
 }
-blockquote {
+
+blockquote{
 	border: 1px dotted green;
 }
-
 /* END FOR PROOFREADING */
