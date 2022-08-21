@@ -18,6 +18,10 @@ ul li{
 	padding: 0;
 }
 
+[epub|type~="z3998:speech"] header{
+	margin-bottom: 0.5em;
+}
+
 header{
 	font-variant: small-caps;
 	margin: 1em;
@@ -55,11 +59,9 @@ abbr[epub|type~="se:era"]{
 
 /* Begin Table Style with Grouping Brackets */
 table{
-	margin: 1em auto 1em auto;
 	border-spacing: 0;
+	margin: 1em auto 1em auto;
 }
-
-
 
 caption{
 	font-size: 1.1em;
