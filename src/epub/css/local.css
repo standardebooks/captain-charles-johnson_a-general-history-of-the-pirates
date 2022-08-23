@@ -14,10 +14,6 @@ ul li{
 	list-style-type: none;
 }
 
-[epub|type~="z3998:speech"] ul{
-	padding: 0;
-}
-
 [epub|type~="z3998:speech"] header{
 	margin-bottom: 0.5em;
 }
@@ -95,6 +91,11 @@ td.right{
 	border-right-style: solid;
 }
 
+tbody.right td{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
 td.left.start{
 	border-radius: 1em 0 0 0;
 }
@@ -129,6 +130,105 @@ tfoot tr td:nth-child(2){
 }
 /* End Table Style with Grouping Brackets */
 
+/* BEGIN FOR DIALOG */
+table[epub|type~="z3998:drama"]{
+	border-collapse: collapse;
+	margin: 1em auto;
+	width: 100%;
+}
+
+[epub|type~="z3998:drama"] tr:first-child td{
+	padding-top: 0;
+}
+
+[epub|type~="z3998:drama"] tr:last-child td{
+	padding-bottom: 0;
+}
+
+[epub|type~="z3998:drama"] td{
+	padding: .5em;
+	vertical-align: top;
+}
+
+[epub|type~="z3998:drama"] td:last-child{
+	padding-right: 0;
+}
+
+[epub|type~="z3998:drama"] td:first-child{
+	padding-left: 0;
+}
+
+[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
+	hyphens: none;
+	-epub-hyphens: none;
+	text-align: right;
+	width: 20%;
+}
+
+[epub|type~="z3998:persona"]{
+	font-variant: all-small-caps;
+}
+
+tr.together{
+	break-inside: avoid;
+}
+
+tr.together td{
+	padding: 0 .5em 0 0;
+	vertical-align: middle;
+}
+
+tr.together td + td{
+	border-left: 1px solid;
+}
+
+[epub|type~="z3998:drama"] .together td:last-child{
+	padding-left: .5em;
+}
+/* END FOR DIALOG */
+
+/* BEGIN FOR PIRATE ARTICLES */
+ol.pirate-article{
+	font-style: italic;
+}
+
+ol.pirate-article > header > p{
+	font-size: 1.1em;
+	font-style: normal;
+	font-variant: normal;
+}
+
+ol.pirate-article aside{
+	display: inline;
+	font-style: normal;
+}
+/* END FOR PIRATE ARTICLES */
+
+/* BEGIN UNORDERED LISTS */
+ul{
+	padding-left: 0;
+}
+
+ul .witness{
+	font-style: italic;
+}
+
+figure{
+	break-inside: avoid;
+	margin: 1em auto;
+	text-align: center;
+}
+
+figure ul{
+	display: inline-block;
+	text-align: initial;
+}
+
+figure li > p{
+	padding-left: 2em;
+}
+/* END UNORDERED LISTS */
+
 /* BEGIN FOR PROOFREADING */
 time{
 	border: 2px dotted red;
@@ -136,18 +236,6 @@ time{
 
 abbr{
 	border: 2px dotted blue;
-}
-
-/* cite {
-	background-color: aliceblue;
-} */
-th,
-td{
-	background-color: aliceblue; /* border: 1px dotted red; */
-}
-
-caption{
-	border: 1px dotted blue;
 }
 
 blockquote{
