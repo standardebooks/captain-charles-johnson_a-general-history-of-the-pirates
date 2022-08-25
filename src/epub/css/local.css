@@ -59,6 +59,14 @@ table{
 	margin: 1em auto 1em auto;
 }
 
+
+table,
+table tr td,
+table tr th {
+  page-break-inside: avoid;
+}
+}
+
 caption{
 	font-size: 1.1em;
 	margin-bottom: 1em;
@@ -98,26 +106,38 @@ tbody.right td{
 
 td.left.start{
 	border-radius: 1em 0 0 0;
+	page-break-after: avoid;
+	page-break-before: auto;
 }
 
 td.right.start{
 	border-radius: 0 1em 0 0;
+	page-break-after: avoid;
+	page-break-before: auto;
 }
 
 td.right.end{
 	border-radius: 0 0 1em 0;
+	page-break-after: auto;
+	page-break-before: avoid;
 }
 
 td.left.end{
 	border-radius: 0 0 0 1em;
+	page-break-after: auto;
+	page-break-before: avoid;
 }
 
 td.left.both{
 	border-radius: 1em 0 0 1em;
+	page-break-after: auto;
+	page-break-before: auto;
 }
 
 td.right.both{
 	border-radius: 0 1em 1em 0;
+	page-break-after: auto;
+	page-break-before: auto;
 }
 
 tfoot tr td:nth-child(1){
