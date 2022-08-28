@@ -59,12 +59,10 @@ table{
 	margin: 1em auto 1em auto;
 }
 
-
 table,
 table tr td,
-table tr th {
-  page-break-inside: avoid;
-}
+table tr th{
+	page-break-inside: avoid;
 }
 
 caption{
