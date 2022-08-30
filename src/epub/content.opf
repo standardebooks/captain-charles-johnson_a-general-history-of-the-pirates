@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-		<dc:identifier id="uid">url:https://standardebooks.org/ebooks/captain-charles-johnson/a-general-history-of-the-pyrates</dc:identifier>
+		<dc:identifier id="uid">url:https://standardebooks.org/ebooks/captain-charles-johnson/a-general-history-of-the-pirates</dc:identifier>
 		<dc:date>1900-01-01T00:00:00Z</dc:date>
 		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
@@ -26,14 +26,14 @@
 		<meta property="schema:accessibilityHazard">none</meta>
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.1 Level AA.</meta>
 		<link href="onix.xml" media-type="application/xml" properties="onix" rel="record"/>
-		<dc:title id="title">A General History of the Pyrates</dc:title>
-		<meta property="file-as" refines="#title">General History of the Pyrates, A</meta>
+		<dc:title id="title">A General History of the Pirates</dc:title>
+		<meta property="file-as" refines="#title">General History of the Pirates, A</meta>
 		<meta property="title-type" refines="#title">main</meta>
 		<dc:title id="subtitle">From Their First Rise and Settlement in the Islands of Providence to the Present Time</dc:title>
 		<meta property="file-as" refines="#subtitle">From Their First Rise and Settlement in the Islands of Providence to the Present Time</meta>
 		<meta property="title-type" refines="#subtitle">subtitle</meta>
-		<dc:title id="fulltitle">A General History of the Pyrates: From Their First Rise and Settlement in the Islands of Providence to the Present Time</dc:title>
-		<meta property="file-as" refines="#fulltitle">General History of the Pyrates, A</meta>
+		<dc:title id="fulltitle">A General History of the Pirates: From Their First Rise and Settlement in the Islands of Providence to the Present Time</dc:title>
+		<meta property="file-as" refines="#fulltitle">General History of the Pirates, A</meta>
 		<meta property="title-type" refines="#fulltitle">extended</meta>
 		<dc:subject id="subject-1">Pirates -- Early works to 1800</dc:subject>
 		<meta property="authority" refines="#subject-1">LCSH</meta>
@@ -56,8 +56,8 @@
 		<dc:source>https://archive.org/details/generalhistoryof00john</dc:source>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
-		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/A_General_History_of_the_Pyrates</meta>
-		<meta property="se:url.vcs.github">https://github.com/standardebooks/captain-charles-johnson_a-general-history-of-the-pyrates</meta>
+		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/A_General_History_of_the_Pirates</meta>
+		<meta property="se:url.vcs.github">https://github.com/standardebooks/captain-charles-johnson_a-general-history-of-the-pirates</meta>
 		<dc:creator id="author">Captain Charles Johnson</dc:creator>
 		<meta property="file-as" refines="#author">Johnson, Captain Charles</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Captain_Charles_Johnson</meta>
