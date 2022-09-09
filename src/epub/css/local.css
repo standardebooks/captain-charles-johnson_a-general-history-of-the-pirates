@@ -400,8 +400,7 @@ body ul:nth-child(41){
 body ul:nth-child(41) li{
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 28em; 
-	/* color:red;
+	max-width: 28em; /* color:red;
 	border: 2px dotted red; */
 }
 
@@ -505,3 +504,114 @@ body ul:nth-child(31) li p{
 	text-indent: 0.5em;
 }
 /* END - The Indictments being found */
+
+/* ***************** */
+table#test{
+	/* color: blue; */
+}
+
+table#test{
+	/* display: inline-block; */
+	margin: 0 auto 0 auto;
+}
+
+table#test tr:nth-child(1) th,
+table#test tr:nth-child(1) td{
+	/* WHERE */ /* color: red; */
+	text-align: left;
+}
+
+table#test tr:nth-child(2) th:first-child,
+table#test tr:nth-child(2) td:first-child{
+	/* RATES */ /* color: red; */
+	padding-left: 2em;
+	width: 1.5em;
+}
+
+table#test tr:nth-child(2) th:nth-child(2),
+table#test tr:nth-child(2) td:nth-child(2){
+	/* SHIP NAME */ /* color: YELLOW; */
+	width: 8em; /* padding-left: 1em; */
+}
+
+table#test tr:nth-child(2) th:last-child,
+table#test tr:nth-child(2) td:last-child{
+	/* # GUNS */ /* color: green; */
+	max-width: 2em;
+	padding: 0 0.5em;
+	text-align: left;
+}
+
+table#test tr:nth-child(3) td{
+	/* COMMENT */ /* color: orange; */
+	font-size: 0.9em;
+	max-width: 35rem;
+	padding-left: 5em;
+	text-align: left;
+}
+
+table#test tr:nth-child(3) td p::before{
+	/* COMMENT BULLET */
+	content: "•";
+}
+
+table#test td{
+	/* border: 2px dotted red; */
+}
+
+.hide{
+	display: none;
+}
+
+/* *********************** */
+/* INTRO - A List of His Majesty’s ships */
+dl:nth-child(36){
+	display: block;
+	margin: 1em auto 1em auto;
+	max-width: 90%;
+}
+
+dl:nth-child(36) caption{
+	hyphens: none;
+	-epub-hyphens: none;
+	margin: 0 auto 0 auto;
+	max-width: 90%;
+}
+
+dl:nth-child(36) dd p{
+	margin-left: 1em;
+}
+
+dl:nth-child(36) dt{
+	font-size: 1.1em;
+	font-variant: small-caps;
+	text-align: left;
+}
+
+dl:nth-child(36) dt:first-of-type,
+dl:nth-child(36) dd:first-of-type p{
+	font-weight: bold;
+}
+
+dl:nth-child(36) dd p:nth-child(1) span{
+	display: inline-block;
+}
+
+dl:nth-child(36) dd p:nth-child(1) span:nth-child(1){
+	width: 9em;
+}
+
+dl:nth-child(36) dd p:nth-child(1) span:nth-child(2){
+	text-align: center;
+	width: 3.5em;
+}
+
+dl:nth-child(36) dd p:nth-child(1) span:nth-child(3){
+	text-align: center;
+	width: 3em;
+}
+
+dl:nth-child(36) dd p:nth-child(1) span:nth-child(4){
+	padding-bottom: 0.5em;
+}
+/* END - A List of His Majesty’s ships */
