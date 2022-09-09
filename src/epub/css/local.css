@@ -272,30 +272,6 @@ blockquote{
 }
 /* END PROOFING */
 
-/* INTRO - The List of ships and vessels Taken by the Spanish men of war in the year 1716 */
-body table:nth-child(29){
-	text-align: left;
-}
-
-body table:nth-child(29) .col-1{
-	padding-right: 0.5em;
-}
-
-body table:nth-child(29) .col-2{
-	padding-right: 1.5em;
-	text-align: left;
-}
-
-body table:nth-child(29) td.col-1 p.i1{
-	padding-left: 0.5em;
-}
-
-body table:nth-child(29) td.col-3{
-	max-width: 15em;
-	text-align: left;
-}
-/* END - The List of ships and vessels Taken by the Spanish men of war in the year 1716 */
-
 /* INTRO - A List of His Majesty’s ships and vessels employed, and to Be Employed */
 body blockquote table:nth-child(3){
 	max-width: 70em;
@@ -564,6 +540,56 @@ table#test td{
 }
 
 /* *********************** */
+/* INTRO - The List of ships and vessels Taken by the Spanish */
+ul:nth-child(29){
+	display: block;
+	margin: 1em auto 1em auto;
+	max-width: 90%;
+}
+
+ul:nth-child(29) header{
+	hyphens: none;
+	-epub-hyphens: none;
+	max-width: 90%;
+}
+
+ul:nth-child(29) li{
+	display: block;
+	max-width: 250em;
+}
+
+ul:nth-child(29) li span{
+	display: inline-block;
+}
+
+ul:nth-child(29) li span:first-child{
+	font-size: 1.1em;
+	font-variant: small-caps;
+	width: 9em; 
+}
+
+ul:nth-child(29) li span:first-child.i1{
+	padding-left:1.5em;
+	margin-right:-1.5em;
+}
+
+ul:nth-child(29) li span:nth-child(2){
+	padding-left: 1em;
+	width: 10em;
+	margin-right: -0.5em;
+}
+
+ul:nth-child(29) li span:nth-child(3){
+	padding-left: 1em;
+}
+
+ul:nth-child(29) dt span.i1{
+	margin-left: 1em;
+	margin-right: -1em;
+}
+/* END - The List of ships and vessels Taken by the Spanish */
+
+/* *********************** */
 /* INTRO - A List of His Majesty’s ships */
 dl:nth-child(36){
 	display: block;
@@ -571,15 +597,11 @@ dl:nth-child(36){
 	max-width: 90%;
 }
 
-dl:nth-child(36) caption{
+dl:nth-child(36) header{
 	hyphens: none;
 	-epub-hyphens: none;
-	margin: 0 auto 0 auto;
+	margin: 1em auto 0.5em auto;
 	max-width: 90%;
-}
-
-dl:nth-child(36) dd p{
-	margin-left: 1em;
 }
 
 dl:nth-child(36) dt{
@@ -593,25 +615,26 @@ dl:nth-child(36) dd:first-of-type p{
 	font-weight: bold;
 }
 
-dl:nth-child(36) dd p:nth-child(1) span{
+dl:nth-child(36) dd p{
 	display: inline-block;
+	text-indent: 0;
 }
 
-dl:nth-child(36) dd p:nth-child(1) span:nth-child(1){
+dl:nth-child(36) dd p:nth-child(1){
 	width: 9em;
 }
 
-dl:nth-child(36) dd p:nth-child(1) span:nth-child(2){
-	text-align: center;
-	width: 3.5em;
-}
-
-dl:nth-child(36) dd p:nth-child(1) span:nth-child(3){
+dl:nth-child(36) dd p:nth-child(2){
 	text-align: center;
 	width: 3em;
 }
 
-dl:nth-child(36) dd p:nth-child(1) span:nth-child(4){
-	padding-bottom: 0.5em;
+dl:nth-child(36) dd p:nth-child(3){
+	text-align: center;
+	width: 3em;
+}
+
+dl:nth-child(36) dd p:nth-child(4){
+	margin-bottom: 0.5em;
 }
 /* END - A List of His Majesty’s ships */
