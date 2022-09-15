@@ -135,31 +135,10 @@ i[epub|type~="z3998:persona"] abbr{
 	font-style: normal;
 }
 /* end - name under a listed person */
-
-figure{
-	/* grouped list, centered, dual-headers */
-	margin: 1em auto;
-	text-align: center;
-}
-
-figure ul{
-	display: inline-block;
-	text-align: initial;
-}
-
-figure li > p{
-	padding-left: 1em;
-}
-
-figure ul header{
-	margin-bottom: 0.5em;
-	margin-top: 0.5em;
-}
-/* end grouped list */
 /* END UNORDERED LISTS */
 
 /* Grouped Table Begin */
-table.grouped{
+/* table.grouped{
 	border-spacing: 0;
 	margin: 1em auto 1em auto;
 }
@@ -227,20 +206,8 @@ td.right.both{
 	page-break-after: auto;
 	page-break-before: auto;
 	page-break-inside: avoid;
-}
-
+} */
 /* Grouped Table End */
-/* Totaled Table Begin */
-tfoot tr td:nth-child(1){
-	padding-right: 1em;
-	text-align: right;
-}
-
-tfoot tr td:nth-child(2){
-	border-top: 0.1em solid;
-}
-
-/* Totaled Table End */
 /* Pirate Articles Begin */
 ol[epub|type~="notice"]{
 	font-style: italic;
@@ -272,273 +239,6 @@ blockquote{
 }
 /* END PROOFING */
 
-/* INTRO - A List of His Majesty’s ships and vessels employed, and to Be Employed */
-body blockquote table:nth-child(3){
-	max-width: 70em;
-}
-
-body blockquote table:nth-child(3) .col-2,
-body blockquote table:nth-child(3) th.col-3,
-body blockquote table:nth-child(3) .col-4{
-	text-align: center;
-}
-
-body blockquote table:nth-child(3) .col-1{
-	max-width: 30em;
-}
-
-body blockquote table:nth-child(3) .col-2{
-	max-width: 7em;
-}
-
-body blockquote table:nth-child(3) .col-3{
-	max-width: 10em;
-}
-
-body blockquote table:nth-child(3) .col-4{
-	max-width: 4em;
-}
-
-body blockquote table:nth-child(3) .col-5{
-	max-width: 25em;
-	text-align: left;
-}
-
-body blockquote table:nth-child(3) th.col-1{
-	text-align: left;
-}
-/* END - A List of His Majesty’s ships and vessels employed, and to Be Employed */
-
-/* CH11 - A List of the White-men */
-body table:nth-child(76) .col-1{
-	max-width: 15em;
-	min-width: 10em;
-	text-align: left;
-}
-
-body table:nth-child(76) .col-1 p.i1{
-	padding-left: 1em;
-}
-
-body table:nth-child(76) .col-2{
-	max-width: 20em;
-	min-width: 10em;
-	text-align: left;
-}
-/* END - A List of the White-men */
-
-/* CH11 - Prisoners Taken in the Ranger */
-/* CH11 - The Charge Was Exhibited Also Against */
-body article table:nth-child(9),
-body article table:nth-child(33){
-	margin: 1em auto 1em auto; /* color:red; */
-}
-
-body article table:nth-child(9) th,
-body article table:nth-child(33) th{
-	font-variant: small-caps;
-}
-
-body article table:nth-child(9) .col-1,
-body article table:nth-child(33) .col-1{
-	max-width: 10em;
-	text-align: left; /* color:blue; */
-}
-
-body article table:nth-child(9) .col-2,
-body article table:nth-child(33) .col-2{
-	max-width: 13em;
-	min-width: 10em;
-	text-align: left; /* color:green; */
-}
-
-body article table:nth-child(9) .col-2-sub{
-	max-width: 7em;
-	min-width: 5em;
-	text-align: left;
-}
-
-body article table:nth-child(9) .col-3,
-body article table:nth-child(33) .col-3{
-	max-width: 7em;
-	min-width: 4em;
-	padding-right: 0;
-	text-align: right;
-}
-/* END - Prisoners Taken in the Ranger */
-/* END - The Charge Was Exhibited Also Against */
-
-/* CH15 - The Court was made up of the following gentlemen. */
-body ul:nth-child(41){
-	text-align: left;
-}
-
-body ul:nth-child(41) li{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 28em; /* color:red;
-	border: 2px dotted red; */
-}
-
-body ul:nth-child(41) li p{
-	padding-left: 4em;
-	text-indent: -4em;
-}
-
-body table:nth-child(41) .col-1{
-	min-width: 10em;
-	text-align: right;
-}
-
-body table:nth-child(41) .col-2{
-	text-align: left;
-}
-/* END - The Court was made up of the following gentlemen. */
-
-/* CH11 - The following pirates were executed */
-/* CH15 - Prisoners’ Names */
-body table:nth-child(50){
-	margin: 1em auto 1em auto;
-}
-
-body table:nth-child(43),
-body table:nth-child(50){
-	margin: 1em auto 1em auto;
-}
-
-body table:nth-child(43) thead th,
-body table:nth-child(50) thead th{
-	/* column heading */
-	font-variant: small-caps;
-	padding-bottom: 0.5em;
-}
-
-body table:nth-child(43) tbody th,
-body table:nth-child(50) tbody th{
-	/* grouped caption */
-	font-size: 1.1em;
-	font-weight: normal;
-	max-width: 35em;
-	padding-bottom: 0.5em;
-	padding-left: 1em;
-	text-align: left;
-	text-indent: -1em;
-}
-
-body table:nth-child(43) .col-1,
-body table:nth-child(50) .col-1{
-	max-width: 8em;
-	text-align: left; /* color: red; */
-}
-
-body table:nth-child(43) .col-2,
-body table:nth-child(50) .col-2{
-	max-width: 5em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	text-align: center; /* color:green */
-}
-
-body table:nth-child(43) .col-3,
-body table:nth-child(50) .col-3{
-	max-width: 25em;
-	min-width: 5em;
-	text-align: left; /* color:blue */
-}
-/* END - The following pirates were executed */
-/* END - Prisoners’ Names */
-
-/* CH11 - In Like manner Was Drawn Out */
-body ul:nth-child(55){
-	margin: 1em auto 1em auto; /* color:red */
-}
-
-body ul:nth-child(55) li{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 30em; /* color:red;
-	border: 2px dotted red; */
-}
-/* END - In Like manner Was Drawn Out */
-
-/* CH4 - The Indictments being found */
-body ul:nth-child(8),
-body ul:nth-child(31){
-	margin: 1em auto 1em auto; /* color:red; */
-}
-
-body ul:nth-child(8) li,
-body ul:nth-child(31) li{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 45em; /* color:red;
-	border: 2px dotted red; */
-}
-
-body ul:nth-child(8) li p,
-body ul:nth-child(31) li p{
-	text-indent: 0.5em;
-}
-/* END - The Indictments being found */
-
-/* ***************** */
-table#test{
-	/* color: blue; */
-}
-
-table#test{
-	/* display: inline-block; */
-	margin: 0 auto 0 auto;
-}
-
-table#test tr:nth-child(1) th,
-table#test tr:nth-child(1) td{
-	/* WHERE */ /* color: red; */
-	text-align: left;
-}
-
-table#test tr:nth-child(2) th:first-child,
-table#test tr:nth-child(2) td:first-child{
-	/* RATES */ /* color: red; */
-	padding-left: 2em;
-	width: 1.5em;
-}
-
-table#test tr:nth-child(2) th:nth-child(2),
-table#test tr:nth-child(2) td:nth-child(2){
-	/* SHIP NAME */ /* color: YELLOW; */
-	width: 8em; /* padding-left: 1em; */
-}
-
-table#test tr:nth-child(2) th:last-child,
-table#test tr:nth-child(2) td:last-child{
-	/* # GUNS */ /* color: green; */
-	max-width: 2em;
-	padding: 0 0.5em;
-	text-align: left;
-}
-
-table#test tr:nth-child(3) td{
-	/* COMMENT */ /* color: orange; */
-	font-size: 0.9em;
-	max-width: 35rem;
-	padding-left: 5em;
-	text-align: left;
-}
-
-table#test tr:nth-child(3) td p::before{
-	/* COMMENT BULLET */
-	content: "•";
-}
-
-table#test td{
-	/* border: 2px dotted red; */
-}
-
-.hide{
-	display: none;
-}
-
 /* *********************** */
 /* INTRO - The List of ships and vessels Taken by the Spanish */
 ul:nth-child(29){
@@ -565,18 +265,18 @@ ul:nth-child(29) li span{
 ul:nth-child(29) li span:first-child{
 	font-size: 1.1em;
 	font-variant: small-caps;
-	width: 9em; 
+	width: 9em;
 }
 
 ul:nth-child(29) li span:first-child.i1{
-	padding-left:1.5em;
-	margin-right:-1.5em;
+	margin-right: -1.5em;
+	padding-left: 1.5em;
 }
 
 ul:nth-child(29) li span:nth-child(2){
+	margin-right: -0.5em;
 	padding-left: 1em;
 	width: 10em;
-	margin-right: -0.5em;
 }
 
 ul:nth-child(29) li span:nth-child(3){
@@ -638,3 +338,274 @@ dl:nth-child(36) dd p:nth-child(4){
 	margin-bottom: 0.5em;
 }
 /* END - A List of His Majesty’s ships */
+
+/* CH03 - The names of the pirates killed */
+dl:nth-child(51){
+	display: block;
+	margin: 1em auto 1em auto;
+	max-width: 90%;
+}
+
+dl:nth-child(51) dt{
+	hyphens: none;
+	-epub-hyphens: none;
+	margin: 1em auto 0.5em auto;
+	max-width: 90%;
+	text-align: center;
+}
+
+dl:nth-child(51) dt{
+	font-size: 1.1em;
+	font-variant: small-caps;
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+dl:nth-child(51) dd{
+	display: block;
+	text-align: left;
+}
+
+dl:nth-child(51) dd:last-child{
+	columns: 18em 2;
+}
+
+dl:nth-child(51) dd p{
+	padding-left: 1em;
+	text-indent: 0;
+}
+/* END - The names of the pirates killed */
+
+/* CH04 - Stede Bonnet, alias Edwards, alias Thomas */
+/* CH05 - The Eagle Pink, Captain Rickets */
+dl:nth-child(31),
+dl:nth-child(8){
+	margin: 1em auto 1em auto;
+	max-width: fit-content;
+	padding: 0 1em 0 1em;
+}
+
+dl:nth-child(31) dt,
+dl:nth-child(31) dd,
+dl:nth-child(31) p,
+dl:nth-child(8) dt,
+dl:nth-child(8) dd,
+dl:nth-child(8) p{
+	display: inline;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+dl:nth-child(31) p.none,
+dl:nth-child(8) p.none{
+	display: none;
+}
+
+dl:nth-child(31) dt,
+dl:nth-child(8) dt{
+	font-variant: small-caps;
+}
+
+dl:nth-child(31) dt::before,
+dl:nth-child(8) dt::before{
+	content: white-space:pre;
+}
+/* END - Stede Bonnet, alias Edwards, alias Thomas */
+/* END - The Eagle Pink, Captain Rickets */
+
+/* CH11 - A List of the White-men */
+table:nth-child(76){
+	max-width: 45em;
+}
+
+table:nth-child(76) caption{
+	hyphens: none;
+	-epub-hyphens: none;
+	margin: 0 auto 0 auto;
+	max-width: 40em;
+	text-align: center;
+}
+
+table:nth-child(76) td{
+	text-align: left;
+	vertical-align: top;
+	width: 50%;
+}
+/* END - A List of the White-men */
+
+/* CH11 - Prisoners Taken in the Ranger */
+/* CH11 - The Charge Was Exhibited Also Against */
+table:nth-child(9),
+table:nth-child(33){
+	margin: 1em auto 1em auto;
+	text-align: left;
+	vertical-align: top;
+}
+
+table:nth-child(9) caption,
+table:nth-child(33) caption,
+table:nth-child(9) th,
+table:nth-child(33) th{
+	font-variant: small-caps;
+}
+
+table:nth-child(9) td,
+table:nth-child(33) td{
+	padding: 0;
+}
+
+table:nth-child(9) td.hidden p,
+table:nth-child(33) td.hidden p{
+	position: relative;
+	visibility: hidden;
+}
+
+table:nth-child(9) td.hidden:nth-child(2) p::after,
+table:nth-child(33) td.hidden:nth-child(2) p::after,
+table:nth-child(9) td.hidden:nth-child(3) p::after,
+table:nth-child(33) td.hidden:nth-child(3) p::after{
+	content: "⸻";
+	position: absolute;
+	top: 0;
+	visibility: visible;
+}
+
+table:nth-child(9) td.hidden:nth-child(2) p::after,
+table:nth-child(33) td.hidden:nth-child(2) p::after{
+	left: 0;
+	padding: 0 0 0 1em;
+}
+
+table:nth-child(9) td.hidden:nth-child(3) p::after,
+table:nth-child(33) td.hidden:nth-child(3) p::after{
+	padding: 0 1em 0 0;
+	right: 0;
+}
+
+table:nth-child(9) td.empty,
+table:nth-child(33) td.empty{
+	visibility: hidden;
+}
+
+table:nth-child(9) td.no-display,
+table:nth-child(33) td.no-display{
+	display: none;
+}
+
+table:nth-child(9) td:nth-child(1),
+table:nth-child(33) td:nth-child(1){
+	padding: 0 0.5em 0 0;
+	width: 10em;
+}
+
+table:nth-child(9) td:nth-child(3),
+table:nth-child(33) td:nth-child(3){
+	padding: 0 0 0 0.5em;
+	text-align: right;
+	vertical-align: top;
+	width: 6.5em;
+}
+
+table:nth-child(9) td:nth-child(1) p,
+table:nth-child(33) td:nth-child(1) p table:nth-child(9) td:nth-child(3) p,
+table:nth-child(33) td:nth-child(3) p{
+	hyphens: none;
+	-epub-hyphens: none;
+}
+
+table:nth-child(9) table table{
+	width: 12em;
+}
+/* END - Prisoners Taken in the Ranger */
+/* END - The Charge Was Exhibited Also Against */
+
+/* CH11 - The following pirates were executed */
+/* CH15 - Prisoners’ Names */
+table:nth-child(50){
+	margin: 1em auto 1em auto;
+}
+
+table:nth-child(43),
+table:nth-child(50){
+	margin: 1em auto 1em auto;
+}
+
+table:nth-child(43) thead th,
+table:nth-child(50) thead th{
+	/* column heading */
+	font-variant: small-caps;
+	padding-bottom: 0.5em;
+}
+
+table:nth-child(43) tbody th,
+table:nth-child(50) tbody th{
+	/* grouped caption */
+	font-size: 1.1em;
+	font-variant: small-caps;
+	font-weight: normal;
+	max-width: 35em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	text-align: left;
+	text-indent: -1em;
+}
+
+table:nth-child(43) .col-1,
+table:nth-child(50) .col-1{
+	max-width: 8em;
+	text-align: left; /* color: red; */
+}
+
+table:nth-child(43) .col-2,
+table:nth-child(50) .col-2{
+	max-width: 5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	text-align: center; /* color:green */
+}
+
+table:nth-child(43) .col-3,
+table:nth-child(50) .col-3{
+	max-width: 25em;
+	min-width: 5em;
+	text-align: left; /* color:blue */
+}
+/* END - The following pirates were executed */
+/* END - Prisoners’ Names */
+
+/* CH11 - In Like manner Was Drawn Out */
+ul:nth-child(55){
+	margin: 1em auto 1em auto;
+	width: fit-content;
+}
+
+ul:nth-child(55) li{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 30em;
+}
+/* END - In Like manner Was Drawn Out */
+
+/* CH11 - Acquitted */
+tfoot tr td:nth-child(1){
+	padding-right: 1em;
+	text-align: right;
+}
+
+tfoot tr td:nth-child(2){
+	border-top: 0.1em solid;
+}
+/* END - Acquitted */
+
+/* CH15 - The Court was made up of the following gentlemen. */
+ul:nth-child(41){
+	margin: 1em auto 1em auto;
+	text-align: left;
+	width: fit-content;
+}
+
+ul:nth-child(41) li p{
+	padding-left: 4em;
+	text-indent: -4em;
+}
+/* END - The Court was made up of the following gentlemen. */
