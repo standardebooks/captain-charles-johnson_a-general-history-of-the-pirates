@@ -115,15 +115,133 @@ p cite{
 	display: inline;
 }
 
-/* UNORDERED LISTS - BEGIN */
-ul{
+
+
+
+
+/* ******************** */
+/* COLLECTED FIGURE CSS */
+/* ******************** */
+
+
+/* ******************** */
+/* UL                   */
+/* ******************** */
+
+ul {
+	list-style-type: none;
+}
+
+ul > li > p {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+ul header {
+	font-variant: small-caps;
+	font-weight: bold;
+	}
+
+.list-of-pirates .pirate,
+.list-of-men .man,
+.list-of-ships > .ship {
+	font-size: 1.1em;
+	font-variant: small-caps;
+	/* color:purple; */
+}
+
+.list-of-ships > .captain {
+	font-size: 0.95em;
+	margin-left: 1em;
+}
+
+.list-of-ships > .status {
+	font-size: 0.95em;
+	margin-left: 1em;
+}
+
+.list-of-ships .place {
+	font-size: 1.1em;
+	margin-top: 0.5em;
+	list-style-type: circle;
 	padding-left: 0;
 }
 
-ul li{
-	/* all unbulletted */
-	list-style-type: none;
+.list-of-ships .place p {
+	padding-left: 0;
+	margin-left: 0;
 }
+
+.list-of-ships .rates {
+	padding-left: 0;
+	text-decoration: underline;
+}
+
+.list-of-ships .rates p::before {
+	content: "Rates: "
+}
+
+.list-of-ships .guns {
+	margin-left: 1em;
+}
+
+.list-of-ships .guns p::before {
+	content: "Guns: "
+}
+
+.list-of-pirates {
+	/* color:blue; */
+}
+
+.list-of-pirates header p {
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+}
+
+.list-of-pirates .bio p,
+.list-of-pirates header ~ li p { 
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+.list-of-men .craft {
+	padding-left: 1em;	
+}
+
+
+/* ******************** */
+/* OL                   */
+/* ******************** */
+.pirate-articles {
+	list-style-type: upper-roman;
+}
+
+.pirate-articles header {
+	font-variant: normal;
+	text-align: center;
+}
+
+.pirate-articles li {
+	font-style: italic;
+}
+
+.pirate-articles li p aside {
+	display: inline;
+	font-style: normal;
+}
+
+
+
+
+/* border: 1px solid orange; */
+
+
+/* ******************** */
+
+
+
+
+/* UNORDERED LISTS - BEGIN */
 
 i[epub|type~="z3998:persona"]{
 	/* name under a listed person */
@@ -408,7 +526,7 @@ dl:nth-child(8) dt{
 
 dl:nth-child(31) dt::before,
 dl:nth-child(8) dt::before{
-	content: white-space:pre;
+	/* content: white-space:pre; */
 }
 /* END - Stede Bonnet, alias Edwards, alias Thomas */
 /* END - The Eagle Pink, Captain Rickets */
