@@ -111,17 +111,12 @@ tr.together td + td{
 /* end dialog */
 
 /* SEMOS BOILERPLATE - END */
+
+
 p cite{
 	display: inline;
 }
 
-
-
-
-
-/* ******************** */
-/* COLLECTED FIGURE CSS */
-/* ******************** */
 
 
 /* ******************** */
@@ -140,6 +135,7 @@ ul > li > p {
 ul header {
 	font-variant: small-caps;
 	font-weight: bold;
+	color:red;
 	}
 
 .list-of-pirates .pirate,
@@ -189,10 +185,6 @@ ul header {
 	content: "Guns: "
 }
 
-.list-of-pirates {
-	/* color:blue; */
-}
-
 .list-of-pirates header p {
 	padding-left: 1.5em;
 	text-indent: -1.5em;
@@ -202,6 +194,11 @@ ul header {
 .list-of-pirates header ~ li p { 
 	padding-left: 1em;
 	text-indent: -1em;
+}
+
+.list-of-pirates b {
+	font-variant: normal;
+	font-weight: bold;
 }
 
 .list-of-men .craft {
@@ -229,11 +226,6 @@ ul header {
 	display: inline;
 	font-style: normal;
 }
-
-
-
-
-/* border: 1px solid orange; */
 
 
 /* ******************** */
@@ -345,15 +337,15 @@ ol[epub|type~="notice"]{
 /* Pirate Articles End */
 /* BEGIN PROOFING */
 time{
-	border: 2px dotted red;
+	/* border: 2px dotted red; */
 }
 
 abbr{
-	border: 2px dotted blue;
+	/* border: 2px dotted blue; */
 }
 
 blockquote{
-	border: 1px dotted green;
+	/* border: 1px dotted green; */
 }
 /* END PROOFING */
 
