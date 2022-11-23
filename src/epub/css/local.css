@@ -1,7 +1,10 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
-/* SEMOS BOILERPLATE - BEGIN */
+
+/*****************************************/
+/* STANDARD EBOOKS BOILERPLATE - GENERAL */
+/*****************************************/
 article,
 section{
 	break-after: page;
@@ -31,6 +34,26 @@ abbr[epub|type~="se:era"]{
 	font-variant: all-small-caps;
 }
 
+/*****************************************/
+/* CUSTOM STYLING - GENERAL              */
+/*****************************************/
+
+p cite{
+	display: inline;
+}
+div {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+header b {
+	font-size: 1.1em;
+}
+
+/*****************************************/
+/* STANDARD EBOOKS BOILERPLATE - LETTERS */
+/*****************************************/
+
 [epub|type~="z3998:sender"],
 [epub|type~="z3998:recipient"],
 [epub|type~="z3998:salutation"],
@@ -53,7 +76,176 @@ abbr[epub|type~="se:era"]{
 	text-indent: 0;
 }
 
-/* begin dialog */
+/*****************************************/
+/* CUSTOM STYLING - LETTERS              */
+/*****************************************/
+
+header [epub|type~="z3998:signature"] {
+	text-align: left;
+	padding-left: 5%;
+	margin-top:1em;
+}
+
+/*****************************************/
+/* CUSTOM STYLING - OL - PIRATE ARTICLES */
+/*****************************************/
+
+ol.pirate-articles{
+	list-style-type: upper-roman;
+}
+
+ol..pirate-articles header{
+	font-variant: normal;
+	text-align: center;
+}
+
+ol..pirate-articles li{
+	font-style: italic;
+}
+
+ol..pirate-articles li p .author-comment{
+	display: inline;
+	font-style: normal;
+}
+
+/*****************************************/
+/* CUSTOM STYLING - UL - GENERAL         */
+/*****************************************/
+
+ul{
+	list-style-type: none;
+}
+
+ul > li > p{
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+ul header{
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+ul .label {
+	font-weight: bold;
+}
+
+
+
+/*****************************************/
+/* CUSTOM STYLING - UL - LIST-OF-MEN     */
+/*                       (NON-PIRATES)   */
+/*****************************************/
+
+ul.list-of-men .craft{
+	padding-left: 1em;
+}
+
+.list-of-men .man {
+	font-size: 1.1em;
+	font-variant: small-caps; 
+}
+
+
+/*****************************************/
+/* CUSTOM STYLING - UL - LIST-OF-SHIPS   */
+/*****************************************/
+
+.list-of-ships > .ship{
+	font-size: 1.1em;
+	font-variant: small-caps; 
+	padding-left: 1em;
+}
+
+.list-of-ships > .captain {
+	font-size: 0.95em;
+	margin-left: 1em;
+}
+
+.list-of-ships > .status {
+	font-size: 0.95em;
+	margin-left: 1em;
+}
+
+.list-of-ships .place {
+	font-size: 1.1em;
+	list-style-type: circle;
+	margin-top: 0.5em;
+	padding-left: 0;
+}
+
+.list-of-ships .place p {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.list-of-ships .rates {
+	padding-left: 0;
+	text-decoration: underline;
+}
+
+.list-of-ships .rates p::before {
+	content: "Rates:";
+}
+
+.list-of-ships .guns {
+	margin-left: 1em;
+}
+
+.list-of-ships .guns p::before {
+	content: "Guns:";
+}
+
+
+/*****************************************/
+/* CUSTOM STYLING - UL - LIST-OF-PIRATES */
+/*****************************************/
+
+.list-of-pirates .pirate {
+	font-size: 1.1em;
+	font-variant: small-caps; 
+	margin-top: 0.3em;
+}
+
+.list-of-pirates header p{
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+}
+
+.list-of-pirates .bio p,
+.list-of-pirates header ~ li p {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+.list-of-pirates b {
+	font-variant: normal;
+	font-weight: bold;
+}
+
+.list-of-pirates .name-age {
+	margin-top: 0.3em;
+}
+
+.list-of-pirates .subgroup-summary {
+	font-variant: small-caps;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.list-of-pirates .time {
+	padding-left: 1em;
+}
+
+.list-of-pirates .place {
+	padding-left: 1em;
+}
+
+/* *********************************** */
+/* STANDARD EBOOKS BOILERPLATE - DRAMA */
+/* *********************************** */
+
+[epub|type~="z3998:drama"] table,
 table[epub|type~="z3998:drama"]{
 	border-collapse: collapse;
 	margin: 1em auto;
@@ -88,8 +280,33 @@ table[epub|type~="z3998:drama"]{
 	width: 20%;
 }
 
+[epub|type~="z3998:stage-direction"]{
+	font-style: italic;
+}
+
+[epub|type~="z3998:stage-direction"] [epub|type~="z3998:persona"],
+em [epub|type~="z3998:persona"],
+i [epub|type~="z3998:persona"]{
+	font-style: normal;
+}
+
+[epub|type~="z3998:stage-direction"]::before{
+	content: "(";
+	font-style: normal;
+}
+
+[epub|type~="z3998:stage-direction"]::after{
+	content: ")";
+	font-style: normal;
+}
+
 [epub|type~="z3998:persona"]{
 	font-variant: all-small-caps;
+}
+
+section[epub|type~="z3998:scene"] > p{
+	margin: 1em auto;
+	width: 75%;
 }
 
 tr.together{
@@ -101,592 +318,33 @@ tr.together td{
 	vertical-align: middle;
 }
 
+tr.together td:only-child,
 tr.together td + td{
 	border-left: 1px solid;
+}
+
+.together + .together td[rowspan],
+.together + .together td[rowspan] + td{
+	padding-top: .5em;
 }
 
 [epub|type~="z3998:drama"] .together td:last-child{
 	padding-left: .5em;
 }
-/* end dialog */
 
-/* SEMOS BOILERPLATE - END */
-p cite{
-	display: inline;
+
+/* ********************************** */
+/* CUSTOM STYLING - DRAMA             */
+/* ********************************** */
+[epub|type~="z3998:drama"] td:last-child{
+	text-align: left;
 }
 
-/* ******************** */
-/* UL */
-/* ******************** */
-ul{
-	list-style-type: none;
-}
-
-ul > li > p{
-	padding-left: 1em;
-	text-indent: -1em;
-}
-
-ul header{
-	font-variant: small-caps;
-	font-weight: bold;
-}
-
-.list-of-pirates .pirate,
-.list-of-men .man,
-.list-of-ships > .ship{
-	font-size: 1.1em;
-	font-variant: small-caps; /* color:purple; */
-}
-
-.list-of-ships > .captain{
-	font-size: 0.95em;
-	margin-left: 1em;
-}
-
-.list-of-ships > .status{
-	font-size: 0.95em;
-	margin-left: 1em;
-}
-
-.list-of-ships .place{
-	font-size: 1.1em;
-	list-style-type: circle;
-	margin-top: 0.5em;
-	padding-left: 0;
-}
-
-.list-of-ships .place p{
-	margin-left: 0;
-	padding-left: 0;
-}
-
-.list-of-ships .rates{
-	padding-left: 0;
-	text-decoration: underline;
-}
-
-.list-of-ships .rates p::before{
-	content: "Rates:";
-}
-
-.list-of-ships .guns{
-	margin-left: 1em;
-}
-
-.list-of-ships .guns p::before{
-	content: "Guns:";
-}
-
-.list-of-pirates header p{
-	padding-left: 1.5em;
-	text-indent: -1.5em;
-}
-
-.list-of-pirates .bio p,
-.list-of-pirates header ~ li p{
-	padding-left: 1em;
-	text-indent: -1em;
-}
-
-.list-of-pirates b{
-	font-variant: normal;
-	font-weight: bold;
-}
-
-.list-of-men .craft{
-	padding-left: 1em;
-}
-
-/* ******************** */
-/* OL */
-/* ******************** */
-.pirate-articles{
-	list-style-type: upper-roman;
-}
-
-.pirate-articles header{
-	font-variant: normal;
-	text-align: center;
-}
-
-.pirate-articles li{
-	font-style: italic;
-}
-
-.pirate-articles li p aside{
-	display: inline;
-	font-style: normal;
-}
-
-/* ******************** */
-/* UNORDERED LISTS - BEGIN */
 i[epub|type~="z3998:persona"]{
-	/* name under a listed person */
-	font-style: italic;
+	font-style: italic; */
 	font-variant: normal;
 }
 
 i[epub|type~="z3998:persona"] abbr{
 	font-style: normal;
 }
-/* end - name under a listed person */
-/* END UNORDERED LISTS */
-
-/* Grouped Table Begin */
-/* table.grouped{
-	border-spacing: 0;
-	margin: 1em auto 1em auto;
-}
-
-table.grouped th{
-	font-variant: all-small-caps;
-	font-weight: normal;
-}
-
-table.grouped caption{
-	margin-bottom: 0.5em;
-}
-
-table.grouped td{
-	border-width: 0.1em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-}
-
-table.grouped td p.i1{
-	padding-left: 1em;
-}
-
-td.left{
-	border-left-style: solid;
-}
-
-td.right{
-	border-right-style: solid;
-}
-
-td.left.start{
-	border-radius: 1em 0 0 0;
-	page-break-after: avoid;
-	page-break-before: auto;
-}
-
-td.right.start{
-	border-radius: 0 1em 0 0;
-	page-break-after: avoid;
-	page-break-before: auto;
-}
-
-td.left.end{
-	border-radius: 0 0 0 1em;
-	page-break-after: auto;
-	page-break-before: avoid;
-}
-
-td.right.end{
-	border-radius: 0 0 1em 0;
-	page-break-after: auto;
-	page-break-before: avoid;
-}
-
-td.left.both{
-	border-radius: 1em 0 0 1em;
-	page-break-after: auto;
-	page-break-before: auto;
-	page-break-inside: avoid;
-}
-
-td.right.both{
-	border-radius: 0 1em 1em 0;
-	page-break-after: auto;
-	page-break-before: auto;
-	page-break-inside: avoid;
-} */
-/* Grouped Table End */
-/* Pirate Articles Begin */
-ol[epub|type~="notice"]{
-	font-style: italic;
-}
-
-[epub|type~="notice"] > header > p{
-	font-size: 1.1em;
-	font-style: normal;
-	font-variant: normal;
-}
-
-[epub|type~="notice"] aside{
-	display: inline;
-	font-style: normal;
-}
-
-/* *********************** */
-/* INTRO - The List of ships and vessels Taken by the Spanish */
-ul:nth-child(29){
-	display: block;
-	margin: 1em auto 1em auto;
-	max-width: 90%;
-}
-
-ul:nth-child(29) header{
-	hyphens: none;
-	-epub-hyphens: none;
-	max-width: 90%;
-}
-
-ul:nth-child(29) li{
-	display: block;
-	max-width: 250em;
-}
-
-ul:nth-child(29) li span{
-	display: inline-block;
-}
-
-ul:nth-child(29) li span:first-child{
-	font-size: 1.1em;
-	font-variant: small-caps;
-	width: 9em;
-}
-
-ul:nth-child(29) li span:first-child.i1{
-	margin-right: -1.5em;
-	padding-left: 1.5em;
-}
-
-ul:nth-child(29) li span:nth-child(2){
-	margin-right: -0.5em;
-	padding-left: 1em;
-	width: 10em;
-}
-
-ul:nth-child(29) li span:nth-child(3){
-	padding-left: 1em;
-}
-
-ul:nth-child(29) dt span.i1{
-	margin-left: 1em;
-	margin-right: -1em;
-}
-/* END - The List of ships and vessels Taken by the Spanish */
-
-/* *********************** */
-/* INTRO - A List of His Majesty’s ships */
-dl:nth-child(36){
-	display: block;
-	margin: 1em auto 1em auto;
-	max-width: 90%;
-}
-
-dl:nth-child(36) header{
-	hyphens: none;
-	-epub-hyphens: none;
-	margin: 1em auto 0.5em auto;
-	max-width: 90%;
-}
-
-dl:nth-child(36) dt{
-	font-size: 1.1em;
-	font-variant: small-caps;
-	text-align: left;
-}
-
-dl:nth-child(36) dt:first-of-type,
-dl:nth-child(36) dd:first-of-type p{
-	font-weight: bold;
-}
-
-dl:nth-child(36) dd p{
-	display: inline-block;
-	text-indent: 0;
-}
-
-dl:nth-child(36) dd p:nth-child(1){
-	width: 9em;
-}
-
-dl:nth-child(36) dd p:nth-child(2){
-	text-align: center;
-	width: 3em;
-}
-
-dl:nth-child(36) dd p:nth-child(3){
-	text-align: center;
-	width: 3em;
-}
-
-dl:nth-child(36) dd p:nth-child(4){
-	margin-bottom: 0.5em;
-}
-/* END - A List of His Majesty’s ships */
-
-/* CH03 - The names of the pirates killed */
-dl:nth-child(51){
-	display: block;
-	margin: 1em auto 1em auto;
-	max-width: 90%;
-}
-
-dl:nth-child(51) dt{
-	hyphens: none;
-	-epub-hyphens: none;
-	margin: 1em auto 0.5em auto;
-	max-width: 90%;
-	text-align: center;
-}
-
-dl:nth-child(51) dt{
-	font-size: 1.1em;
-	font-variant: small-caps;
-	margin-top: 0.5em;
-	text-align: center;
-}
-
-dl:nth-child(51) dd{
-	display: block;
-	text-align: left;
-}
-
-dl:nth-child(51) dd:last-child{
-	columns: 18em 2;
-}
-
-dl:nth-child(51) dd p{
-	padding-left: 1em;
-	text-indent: 0;
-}
-/* END - The names of the pirates killed */
-
-/* CH04 - Stede Bonnet, alias Edwards, alias Thomas */
-/* CH05 - The Eagle Pink, Captain Rickets */
-dl:nth-child(31),
-dl:nth-child(8){
-	margin: 1em auto 1em auto;
-	max-width: fit-content;
-	padding: 0 1em 0 1em;
-}
-
-dl:nth-child(31) dt,
-dl:nth-child(31) dd,
-dl:nth-child(31) p,
-dl:nth-child(8) dt,
-dl:nth-child(8) dd,
-dl:nth-child(8) p{
-	display: inline;
-	margin-left: 0;
-	margin-right: 0;
-}
-
-dl:nth-child(31) p.none,
-dl:nth-child(8) p.none{
-	display: none;
-}
-
-dl:nth-child(31) dt,
-dl:nth-child(8) dt{
-	font-variant: small-caps;
-}
-
-dl:nth-child(31) dt::before,
-dl:nth-child(8) dt::before{
-	/* content: white-space:pre; */
-}
-/* END - Stede Bonnet, alias Edwards, alias Thomas */
-/* END - The Eagle Pink, Captain Rickets */
-
-/* CH11 - A List of the White-men */
-table:nth-child(76){
-	max-width: 45em;
-}
-
-table:nth-child(76) caption{
-	hyphens: none;
-	-epub-hyphens: none;
-	margin: 0 auto 0 auto;
-	max-width: 40em;
-	text-align: center;
-}
-
-table:nth-child(76) td{
-	text-align: left;
-	vertical-align: top;
-	width: 50%;
-}
-/* END - A List of the White-men */
-
-/* CH11 - Prisoners Taken in the Ranger */
-/* CH11 - The Charge Was Exhibited Also Against */
-table:nth-child(9),
-table:nth-child(33){
-	margin: 1em auto 1em auto;
-	text-align: left;
-	vertical-align: top;
-}
-
-table:nth-child(9) caption,
-table:nth-child(33) caption,
-table:nth-child(9) th,
-table:nth-child(33) th{
-	font-variant: small-caps;
-}
-
-table:nth-child(9) td,
-table:nth-child(33) td{
-	padding: 0;
-}
-
-table:nth-child(9) td.hidden p,
-table:nth-child(33) td.hidden p{
-	position: relative;
-	visibility: hidden;
-}
-
-table:nth-child(9) td.hidden:nth-child(2) p::after,
-table:nth-child(33) td.hidden:nth-child(2) p::after,
-table:nth-child(9) td.hidden:nth-child(3) p::after,
-table:nth-child(33) td.hidden:nth-child(3) p::after{
-	content: "⸻";
-	position: absolute;
-	top: 0;
-	visibility: visible;
-}
-
-table:nth-child(9) td.hidden:nth-child(2) p::after,
-table:nth-child(33) td.hidden:nth-child(2) p::after{
-	left: 0;
-	padding: 0 0 0 1em;
-}
-
-table:nth-child(9) td.hidden:nth-child(3) p::after,
-table:nth-child(33) td.hidden:nth-child(3) p::after{
-	padding: 0 1em 0 0;
-	right: 0;
-}
-
-table:nth-child(9) td.empty,
-table:nth-child(33) td.empty{
-	visibility: hidden;
-}
-
-table:nth-child(9) td.no-display,
-table:nth-child(33) td.no-display{
-	display: none;
-}
-
-table:nth-child(9) td:nth-child(1),
-table:nth-child(33) td:nth-child(1){
-	padding: 0 0.5em 0 0;
-	width: 10em;
-}
-
-table:nth-child(9) td:nth-child(3),
-table:nth-child(33) td:nth-child(3){
-	padding: 0 0 0 0.5em;
-	text-align: right;
-	vertical-align: top;
-	width: 6.5em;
-}
-
-table:nth-child(9) td:nth-child(1) p,
-table:nth-child(33) td:nth-child(1) p table:nth-child(9) td:nth-child(3) p,
-table:nth-child(33) td:nth-child(3) p{
-	hyphens: none;
-	-epub-hyphens: none;
-}
-
-table:nth-child(9) table table{
-	width: 12em;
-}
-/* END - Prisoners Taken in the Ranger */
-/* END - The Charge Was Exhibited Also Against */
-
-/* CH11 - The following pirates were executed */
-/* CH15 - Prisoners’ Names */
-table:nth-child(50){
-	margin: 1em auto 1em auto;
-}
-
-table:nth-child(43),
-table:nth-child(50){
-	margin: 1em auto 1em auto;
-}
-
-table:nth-child(43) thead th,
-table:nth-child(50) thead th{
-	/* column heading */
-	font-variant: small-caps;
-	padding-bottom: 0.5em;
-}
-
-table:nth-child(43) tbody th,
-table:nth-child(50) tbody th{
-	/* grouped caption */
-	font-size: 1.1em;
-	font-variant: small-caps;
-	font-weight: normal;
-	max-width: 35em;
-	padding-bottom: 0.5em;
-	padding-left: 1em;
-	text-align: left;
-	text-indent: -1em;
-}
-
-table:nth-child(43) .col-1,
-table:nth-child(50) .col-1{
-	max-width: 8em;
-	text-align: left; /* color: red; */
-}
-
-table:nth-child(43) .col-2,
-table:nth-child(50) .col-2{
-	max-width: 5em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	text-align: center; /* color:green */
-}
-
-table:nth-child(43) .col-3,
-table:nth-child(50) .col-3{
-	max-width: 25em;
-	min-width: 5em;
-	text-align: left; /* color:blue */
-}
-/* END - The following pirates were executed */
-/* END - Prisoners’ Names */
-
-/* CH11 - In Like manner Was Drawn Out */
-ul:nth-child(55){
-	margin: 1em auto 1em auto;
-	width: fit-content;
-}
-
-ul:nth-child(55) li{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 30em;
-}
-/* END - In Like manner Was Drawn Out */
-
-/* CH11 - Acquitted */
-tfoot tr td:nth-child(1){
-	padding-right: 1em;
-	text-align: right;
-}
-
-tfoot tr td:nth-child(2){
-	border-top: 0.1em solid;
-}
-/* END - Acquitted */
-
-/* CH15 - The Court was made up of the following gentlemen. */
-ul:nth-child(41){
-	margin: 1em auto 1em auto;
-	text-align: left;
-	width: fit-content;
-}
-
-ul:nth-child(41) li p{
-	padding-left: 4em;
-	text-indent: -4em;
-}
-/* END - The Court was made up of the following gentlemen. */
