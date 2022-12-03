@@ -54,7 +54,7 @@ header b{
 	font-variant: normal;
 	margin: 0.5em 0 0.5em 0;
 	padding: 0;
-	text-align: left;
+	text-align: initial;
 	text-indent: -1em;
 }
 
@@ -98,7 +98,7 @@ header b{
 header [epub|type~="z3998:signature"]{
 	margin-top: 1em;
 	padding-left: 5%;
-	text-align: left;
+	text-align: initial;
 }
 
 /* *************************************** */
@@ -149,22 +149,27 @@ ul .label{
 /* CUSTOM STYLING - UL - LIST-OF-MEN */
 /* (NON-PIRATES) */
 /* *************************************** */
-ul.list-of-men .craft{
-	padding-left: 1em;
-}
 
-.list-of-men .man{
+.person {
 	font-size: 1.1em;
 	font-variant: small-caps;
+	margin-top: 0.5em;
 }
 
 /* *************************************** */
 /* CUSTOM STYLING - UL - LIST-OF-SHIPS */
 /* *************************************** */
-.list-of-ships > .ship{
+.list-of-ships li p{
+	padding: 0;
+}
+
+.ship {
+	padding-left: 1em;
+}
+
+.list-of-ships > .ship {
 	font-size: 1.1em;
 	font-variant: small-caps;
-	padding-left: 1em;
 }
 
 .list-of-ships > .captain{
@@ -209,21 +214,15 @@ ul.list-of-men .craft{
 /* *************************************** */
 /* CUSTOM STYLING - UL - LIST-OF-PIRATES */
 /* *************************************** */
-.list-of-pirates .pirate{
-	font-size: 1.1em;
-	font-variant: small-caps;
-	margin-top: 0.5em;
+		
+.list-of-pirates p {
+	padding-left: 1em;
+	text-indent: -1em;
 }
 
 .list-of-pirates header p{
 	padding-left: 1.5em;
 	text-indent: -1.5em;
-}
-
-.list-of-pirates .bio p,
-.list-of-pirates header~li p{
-	padding-left: 1em;
-	text-indent: -1em;
 }
 
 .list-of-pirates b{
@@ -233,6 +232,10 @@ ul.list-of-men .craft{
 
 .list-of-pirates .name-age{
 	margin-top: 0.5em;
+}
+
+.list-of-pirates .age {
+	font-variant-numeric: tabular-nums;
 }
 
 .list-of-pirates .subgroup-summary{
@@ -249,10 +252,11 @@ ul.list-of-men .craft{
 	padding-left: 1em;
 }
 
+
+
 /* *********************************** */
 /* STANDARD EBOOKS BOILERPLATE - DRAMA */
 /* *********************************** */
-[epub|type~="z3998:drama"] table,
 table[epub|type~="z3998:drama"]{
 	border-collapse: collapse;
 	margin: 1em auto;
@@ -274,6 +278,7 @@ table[epub|type~="z3998:drama"]{
 
 [epub|type~="z3998:drama"] td:last-child{
 	padding-right: 0;
+	text-align: initial;
 }
 
 [epub|type~="z3998:drama"] td:first-child{
@@ -287,33 +292,8 @@ table[epub|type~="z3998:drama"]{
 	width: 20%;
 }
 
-[epub|type~="z3998:stage-direction"]{
-	font-style: italic;
-}
-
-[epub|type~="z3998:stage-direction"] [epub|type~="z3998:persona"],
-em [epub|type~="z3998:persona"],
-i [epub|type~="z3998:persona"]{
-	font-style: normal;
-}
-
-[epub|type~="z3998:stage-direction"]::before{
-	content: "(";
-	font-style: normal;
-}
-
-[epub|type~="z3998:stage-direction"]::after{
-	content: ")";
-	font-style: normal;
-}
-
 [epub|type~="z3998:persona"]{
 	font-variant: all-small-caps;
-}
-
-section[epub|type~="z3998:scene"] > p{
-	margin: 1em auto;
-	width: 75%;
 }
 
 tr.together{
@@ -325,14 +305,8 @@ tr.together td{
 	vertical-align: middle;
 }
 
-tr.together td:only-child,
 tr.together td + td{
 	border-left: 1px solid;
-}
-
-.together + .together td[rowspan],
-.together + .together td[rowspan] + td{
-	padding-top: 0.5em;
 }
 
 [epub|type~="z3998:drama"] .together td:last-child{
@@ -342,18 +316,6 @@ tr.together td + td{
 /* ********************************** */
 /* CUSTOM STYLING - DRAMA */
 /* ********************************** */
-[epub|type~="z3998:drama"] td:last-child{
-	text-align: left;
-}
-
-i[epub|type~="z3998:persona"]{
-	font-style: italic;
-	font-variant: normal;
-}
-
-i[epub|type~="z3998:persona"] abbr{
-	font-style: normal;
-}
 
 [epub|type~="z3998:drama"] tfoot tr [epub|type~="z3998:signature"]{
 	padding: 0.5em 0.5em 0 0;

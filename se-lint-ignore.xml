@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <se-lint-ignore>
-	<file path="introduction.xhtml">
-		<ignore>
-			<code>s-079</code>
-			<reason>empty element necessary to support bracket</reason>
-		</ignore>
-	</file>
-	<file path="introduction.xhtml">
-		<ignore>
-			<code>s-010</code>
-			<reason>empty element necessary to support bracket</reason>
-		</ignore>
-	</file>
 	<file path="chapter-4.xhtml">
 		<ignore>
 			<code>s-054</code>
 			<reason>blockquote comprised of paragraphs some of which contain citations</reason>
 		</ignore>
 	</file>
-	<file path="chapter-4.xhtml">
+	<file path="chapter-15.xhtml">
 		<ignore>
-			<code>t-042</code>
-			<reason>paragraph elements containing list items</reason>
+			<code>s-045</code>
+			<reason>latinism</reason>
 		</ignore>
 	</file>
-
-
-
 </se-lint-ignore>
