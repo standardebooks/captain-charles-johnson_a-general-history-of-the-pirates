@@ -34,15 +34,14 @@ abbr[epub|type~="se:era"]{
 }
 
 /* *************************************** */
-/* CUSTOM STYLING - GENERAL */
+/* CUSTOM STYLING - GENERAL............... */
 /* *************************************** */
 p cite{
 	display: inline;
 }
 
 div{
-	margin-bottom: 1em;
-	margin-top: 1em;
+	margin 1em 0 1em 0;
 }
 
 header b{
@@ -93,7 +92,7 @@ header b{
 }
 
 /* *************************************** */
-/* CUSTOM STYLING - LETTERS */
+/* CUSTOM STYLING - LETTERS............... */
 /* *************************************** */
 header [epub|type~="z3998:signature"]{
 	margin-top: 1em;
@@ -101,29 +100,34 @@ header [epub|type~="z3998:signature"]{
 	text-align: initial;
 }
 
+footer [epub|type~="z3998:signature"] ~ [epub|type~="z3998:signature"] {
+	/* multiple signatures */
+	line-height: 1;
+}
+
 /* *************************************** */
-/* CUSTOM STYLING - OL - PIRATE ARTICLES */
+/* CUSTOM STYLING - OL - ARTICLES......... */
 /* *************************************** */
-ol.pirate-articles{
+.articles{
 	list-style-type: upper-roman;
 }
 
-ol.pirate-articles header{
+.articles header{
 	font-variant: normal;
 	text-align: center;
 }
 
-ol.pirate-articles li{
+.articles li{
 	font-style: italic;
 }
 
-ol.pirate-articles li p .author-comment{
+.aside{
 	display: inline;
 	font-style: normal;
 }
 
 /* *************************************** */
-/* CUSTOM STYLING - UL - GENERAL */
+/* CUSTOM STYLING - UL.................... */
 /* *************************************** */
 ul{
 	hyphens: none;
@@ -141,118 +145,99 @@ ul header{
 	font-weight: bold;
 }
 
-ul .label{
+.label{
 	font-weight: bold;
 }
 
 /* *************************************** */
-/* CUSTOM STYLING - UL - LIST-OF-MEN */
-/* (NON-PIRATES) */
+/* CUSTOM STYLING - UL - ships............ */
 /* *************************************** */
-
-.person {
-	font-size: 1.1em;
-	font-variant: small-caps;
-	margin-top: 0.5em;
-}
-
-/* *************************************** */
-/* CUSTOM STYLING - UL - LIST-OF-SHIPS */
-/* *************************************** */
-.list-of-ships li p{
+.ships li p{
 	padding: 0;
 }
 
-.ship {
+.ship{
 	padding-left: 1em;
 }
 
-.list-of-ships > .ship {
+.ships > .ship{
 	font-size: 1.1em;
 	font-variant: small-caps;
 }
 
-.list-of-ships > .captain{
+.status,
+.captain{
 	font-size: 0.95em;
 	margin-left: 1em;
 }
 
-.list-of-ships > .status{
-	font-size: 0.95em;
-	margin-left: 1em;
-}
-
-.list-of-ships .place{
+.ships .place{
 	font-size: 1.1em;
 	list-style-type: circle;
 	margin-top: 0.5em;
 	padding-left: 0;
 }
 
-.list-of-ships .place p{
+.ships .place p{
 	margin-left: 0;
 	padding-left: 0;
 }
 
-.list-of-ships .rates{
+.ships .rates{
 	padding-left: 0;
 	text-decoration: underline;
 }
 
-.list-of-ships .rates p::before{
+.ships .rates p::before{
 	content: "Rates:";
 }
 
-.list-of-ships .guns{
+.guns{
+	font-variant-numeric: tabular-nums;
 	margin-left: 1em;
 }
 
-.list-of-ships .guns p::before{
+.guns p::before{
 	content: "Guns:";
 }
 
 /* *************************************** */
-/* CUSTOM STYLING - UL - LIST-OF-PIRATES */
+/* CUSTOM STYLING - UL - pirates.......... */
 /* *************************************** */
-		
-.list-of-pirates p {
+.pirates p{
 	padding-left: 1em;
 	text-indent: -1em;
 }
 
-.list-of-pirates header p{
+.pirates header p{
 	padding-left: 1.5em;
 	text-indent: -1.5em;
 }
 
-.list-of-pirates b{
+.pirates b{
 	font-variant: normal;
 	font-weight: bold;
 }
 
-.list-of-pirates .name-age{
+.name-age{
 	margin-top: 0.5em;
 }
 
-.list-of-pirates .age {
+.age{
 	font-variant-numeric: tabular-nums;
 }
 
-.list-of-pirates .subgroup-summary{
+.name-age ~ li:not(.place):not(.name-age){
+	/* GROUP SUMMARY */
 	font-variant: small-caps;
 	margin-bottom: 1em;
 	margin-top: 0.5em;
 }
 
-.list-of-pirates .time{
+.pirates .place,
+.time {
 	padding-left: 1em;
 }
-
-.list-of-pirates .place{
-	padding-left: 1em;
-}
-
-
 
 /* *********************************** */
 /* STANDARD EBOOKS BOILERPLATE - DRAMA */
@@ -316,7 +301,6 @@ tr.together td + td{
 /* ********************************** */
 /* CUSTOM STYLING - DRAMA */
 /* ********************************** */
-
 [epub|type~="z3998:drama"] tfoot tr [epub|type~="z3998:signature"]{
 	padding: 0.5em 0.5em 0 0;
 	text-align: right;
@@ -325,4 +309,19 @@ tr.together td + td{
 [epub|type~="z3998:drama"] tfoot tr [epub|type~="z3998:signature"] abbr{
 	display: inline;
 	margin: 0 0 0 1em;
+}
+
+.person{
+	font-size: 1.1em;
+	font-variant: small-caps;
+	margin-top: 0.5em;
+}
+
+article,
+div,
+div [epub|type~="z3998:drama"] [epub|type~="z3998:persona"] {
+	padding-left:0;
+	padding-right:0;
+	margin-left:0;
+	margin-right:0;
 }
