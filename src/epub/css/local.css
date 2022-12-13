@@ -41,7 +41,7 @@ p cite{
 }
 
 div{
-	margin 1em 0 1em 0;
+	margin: 1em 0 1em 0;
 }
 
 header b{
@@ -169,7 +169,12 @@ ul header{
 .captain{
 	font-size: 0.95em;
 	margin-left: 1em;
+	line-height: 0.95;
 }
+.status {
+	margin-bottom: 1em;
+}
+
 
 .ships .place{
 	font-size: 1.1em;
@@ -186,6 +191,11 @@ ul header{
 .ships .rates{
 	padding-left: 0;
 	text-decoration: underline;
+	margin-bottom: 0.5em;
+}
+
+.no-rates {
+	margin-top: 0.5em;
 }
 
 .ships .rates p::before{
@@ -195,6 +205,8 @@ ul header{
 .guns{
 	font-variant-numeric: tabular-nums;
 	margin-left: 1em;
+	margin: 0 auto 0 1em;
+	line-height: 0.95;
 }
 
 .guns p::before{
