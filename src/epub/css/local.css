@@ -22,6 +22,7 @@ header{
 	font-variant: small-caps;
 	margin: 1em;
 	text-align: center;
+	line-height: 1;
 }
 
 footer{
@@ -55,6 +56,7 @@ header b{
 	padding: 0;
 	text-align: initial;
 	text-indent: -1em;
+	line-height: 1.2;
 }
 
 [epub|type~="z3998:essay"] header p{
@@ -64,6 +66,12 @@ header b{
 
 [epub|type~="z3998:essay"] > p:first-of-type{
 	margin-top: 0;
+}
+
+table:not([epub|type~="z3998:drama"]) tbody tr td:nth-child(2), 
+table:not([epub|type~="z3998:drama"]) tfoot tr td:nth-child(2) {
+	/* Ch XI - ...the account of the whole stands thus... */
+	text-align: right;
 }
 
 /* *************************************** */
@@ -149,6 +157,12 @@ ul header{
 	font-weight: bold;
 }
 
+.name-title {
+	/* Ch X5 The court was made up of the ... */
+	line-height: 1;
+	margin-bottom: 0.5em;
+}
+
 /* *************************************** */
 /* CUSTOM STYLING - UL - ships............ */
 /* *************************************** */
@@ -178,8 +192,7 @@ ul header{
 
 .ships .place{
 	font-size: 1.1em;
-	list-style-type: circle;
-	margin-top: 0.5em;
+	margin: 0.5em auto auto -1em;
 	padding-left: 0;
 }
 
@@ -233,6 +246,7 @@ ul header{
 
 .name-age{
 	margin-top: 0.5em;
+	line-height: 1;
 }
 
 .age{
@@ -244,11 +258,23 @@ ul header{
 	font-variant: small-caps;
 	margin-bottom: 1em;
 	margin-top: 0.5em;
+	font-size: 1.1em;
 }
 
+.name-age ~ li:not(.place):not(.name-age) p {
+	text-indent:0;
+	padding-left: 0;
+	margin-left: -1em;
+}
 .pirates .place,
 .time {
 	padding-left: 1em;
+}
+
+.pirates .ship p {
+	/* tighten groupings from the center */
+	margin-top:0;
+	margin-bottom:0;
 }
 
 /* *********************************** */
@@ -336,4 +362,8 @@ div [epub|type~="z3998:drama"] [epub|type~="z3998:persona"] {
 	padding-right:0;
 	margin-left:0;
 	margin-right:0;
+}
+
+caption {
+	margin-bottom: 1em;
 }
