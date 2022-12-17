@@ -20,9 +20,9 @@ table td:last-child{
 
 header{
 	font-variant: small-caps;
+	line-height: 1;
 	margin: 1em;
 	text-align: center;
-	line-height: 1;
 }
 
 footer{
@@ -52,11 +52,11 @@ header b{
 [epub|type~="z3998:letter"] header [epub|type~="subtitle"]{
 	/* Ch IX - Copy of Indenture Subtitle */
 	font-variant: normal;
+	line-height: 1.2;
 	margin: 0.5em 0 0.5em 0;
 	padding: 0;
 	text-align: initial;
 	text-indent: -1em;
-	line-height: 1.2;
 }
 
 [epub|type~="z3998:essay"] header p{
@@ -68,8 +68,8 @@ header b{
 	margin-top: 0;
 }
 
-table:not([epub|type~="z3998:drama"]) tbody tr td:nth-child(2), 
-table:not([epub|type~="z3998:drama"]) tfoot tr td:nth-child(2) {
+table:not([epub|type~="z3998:drama"]) tbody tr td:nth-child(2),
+table:not([epub|type~="z3998:drama"]) tfoot tr td:nth-child(2){
 	/* Ch XI - ...the account of the whole stands thus... */
 	text-align: right;
 }
@@ -108,7 +108,7 @@ header [epub|type~="z3998:signature"]{
 	text-align: initial;
 }
 
-footer [epub|type~="z3998:signature"] ~ [epub|type~="z3998:signature"] {
+footer [epub|type~="z3998:signature"] ~ [epub|type~="z3998:signature"]{
 	/* multiple signatures */
 	line-height: 1;
 }
@@ -157,7 +157,7 @@ ul header{
 	font-weight: bold;
 }
 
-.name-title {
+.name-title{
 	/* Ch X5 The court was made up of the ... */
 	line-height: 1;
 	margin-bottom: 0.5em;
@@ -182,13 +182,13 @@ ul header{
 .status,
 .captain{
 	font-size: 0.95em;
-	margin-left: 1em;
 	line-height: 0.95;
-}
-.status {
-	margin-bottom: 1em;
+	margin-left: 1em;
 }
 
+.status{
+	margin-bottom: 1em;
+}
 
 .ships .place{
 	font-size: 1.1em;
@@ -202,12 +202,12 @@ ul header{
 }
 
 .ships .rates{
+	margin-bottom: 0.5em;
 	padding-left: 0;
 	text-decoration: underline;
-	margin-bottom: 0.5em;
 }
 
-.no-rates {
+.no-rates{
 	margin-top: 0.5em;
 }
 
@@ -217,9 +217,9 @@ ul header{
 
 .guns{
 	font-variant-numeric: tabular-nums;
-	margin-left: 1em;
-	margin: 0 auto 0 1em;
 	line-height: 0.95;
+	margin: 0 auto 0 1em;
+	margin-left: 1em;
 }
 
 .guns p::before{
@@ -245,8 +245,8 @@ ul header{
 }
 
 .name-age{
-	margin-top: 0.5em;
 	line-height: 1;
+	margin-top: 0.5em;
 }
 
 .age{
@@ -255,26 +255,27 @@ ul header{
 
 .name-age ~ li:not(.place):not(.name-age){
 	/* GROUP SUMMARY */
+	font-size: 1.1em;
 	font-variant: small-caps;
 	margin-bottom: 1em;
 	margin-top: 0.5em;
-	font-size: 1.1em;
 }
 
-.name-age ~ li:not(.place):not(.name-age) p {
-	text-indent:0;
-	padding-left: 0;
+.name-age ~ li:not(.place):not(.name-age) p{
 	margin-left: -1em;
+	padding-left: 0;
+	text-indent: 0;
 }
+
 .pirates .place,
-.time {
+.time{
 	padding-left: 1em;
 }
 
-.pirates .ship p {
+.pirates .ship p{
 	/* tighten groupings from the center */
-	margin-top:0;
-	margin-bottom:0;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 /* *********************************** */
@@ -357,13 +358,13 @@ tr.together td + td{
 
 article,
 div,
-div [epub|type~="z3998:drama"] [epub|type~="z3998:persona"] {
-	padding-left:0;
-	padding-right:0;
-	margin-left:0;
-	margin-right:0;
+div [epub|type~="z3998:drama"] [epub|type~="z3998:persona"]{
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-caption {
+caption{
 	margin-bottom: 1em;
 }
