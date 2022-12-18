@@ -4,7 +4,7 @@
 /* *************************************** */
 /* STANDARD EBOOKS BOILERPLATE - GENERAL */
 /* *************************************** */
-article,
+/* article, */
 section{
 	break-after: page;
 }
