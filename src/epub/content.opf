@@ -40,16 +40,9 @@
 		<meta property="term" refines="#subject-1">sh2010106478</meta>
 		<meta property="se:subject">Biography</meta>
 		<meta property="se:subject">Nonfiction</meta>
-		<dc:description id="description">In the 18th century, daring outlaws terrorized the North Atlantic Ocean and Caribbean Sea.</dc:description>
+		<dc:description id="description">In the 18th century, daring outlaws terrorized the Atlantic Ocean and Caribbean Sea.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			&lt;p&gt;In the 18th century, daring outlaws terrorized the North Atlantic Ocean and Caribbean Sea.&lt;/p&gt;
-			&lt;p&gt;This book includes primary sources in documenting historic events.&lt;/p&gt;
-			&lt;p&gt;It describes the biographies of significant characters at the time of its writing.&lt;/p&gt;
-			&lt;p&gt;It analyzes and describes the social and cultural context of the Golden Age of Piracy.&lt;/p&gt;
-			&lt;p&gt;The event’s it describe prefigure the American Revolution.&lt;/p&gt;
-			&lt;p&gt;It describes the legal policy and practice of its time.&lt;/p&gt;
-			&lt;p&gt;The author’s identity is debated.&lt;/p&gt;
-			&lt;p&gt;It created the image of the pirate which made a lasting impact on the popular culture though books, movies, television, entertainment venues, the political party, and talk like a pirate day.&lt;/p&gt;
+			&lt;p&gt;During the Golden Age of Piracy, a writer calling himself &lt;a href="https://standardebooks.org/ebooks/captain-charles-johnson"&gt;Captain Charles Johnson&lt;/a&gt; introduced London readers to the denizens of a savage world just beyond their shores. These pirates took up residence in readers’ imaginations from which they have been a mainstay of popular culture ever since.&lt;/p&gt;
 		</meta>
 		<dc:language>en-GB</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/40580</dc:source>
