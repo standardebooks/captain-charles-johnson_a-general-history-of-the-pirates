@@ -2,9 +2,8 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 
 /* *************************************** */
-/* STANDARD EBOOKS BOILERPLATE - GENERAL */
+/* STANDARD EBOOKS BOILERPLATE - GENERAL.. */
 /* *************************************** */
-/* article, */
 section{
 	break-after: page;
 }
@@ -75,7 +74,7 @@ table:not([epub|type~="z3998:drama"]) tfoot tr td:nth-child(2){
 }
 
 /* *************************************** */
-/* STANDARD EBOOKS BOILERPLATE - LETTERS */
+/* STANDARD EBOOKS BOILERPLATE - LETTERS.. */
 /* *************************************** */
 [epub|type~="z3998:sender"],
 [epub|type~="z3998:recipient"],
@@ -153,131 +152,6 @@ ul header{
 	font-weight: bold;
 }
 
-.label{
-	font-weight: bold;
-}
-
-.name-title{
-	/* Ch X5 The court was made up of the ... */
-	line-height: 1;
-	margin-bottom: 0.5em;
-}
-
-/* *************************************** */
-/* CUSTOM STYLING - UL - ships............ */
-/* *************************************** */
-.ships li p{
-	padding: 0;
-}
-
-.ship{
-	padding-left: 1em;
-}
-
-.ships > .ship{
-	font-size: 1.1em;
-	font-variant: small-caps;
-}
-
-.status,
-.captain{
-	font-size: 0.95em;
-	line-height: 0.95;
-	margin-left: 1em;
-}
-
-.status{
-	margin-bottom: 1em;
-}
-
-.ships .place{
-	font-size: 1.1em;
-	margin: 0.5em auto auto -1em;
-	padding-left: 0;
-}
-
-.ships .place p{
-	margin-left: 0;
-	padding-left: 0;
-}
-
-.ships .rates{
-	margin-bottom: 0.5em;
-	padding-left: 0;
-	text-decoration: underline;
-}
-
-.no-rates{
-	margin-top: 0.5em;
-}
-
-.ships .rates p::before{
-	content: "Rates:";
-}
-
-.guns{
-	font-variant-numeric: tabular-nums;
-	line-height: 0.95;
-	margin: 0 auto 0 1em;
-	margin-left: 1em;
-}
-
-.guns p::before{
-	content: "Guns:";
-}
-
-/* *************************************** */
-/* CUSTOM STYLING - UL - pirates.......... */
-/* *************************************** */
-.pirates p{
-	padding-left: 1em;
-	text-indent: -1em;
-}
-
-.pirates header p{
-	padding-left: 1.5em;
-	text-indent: -1.5em;
-}
-
-.pirates b{
-	font-variant: normal;
-	font-weight: bold;
-}
-
-.name-age{
-	line-height: 1;
-	margin-top: 0.5em;
-}
-
-.age{
-	font-variant-numeric: tabular-nums;
-}
-
-.name-age ~ li:not(.place):not(.name-age){
-	/* GROUP SUMMARY */
-	font-size: 1.1em;
-	font-variant: small-caps;
-	margin-bottom: 1em;
-	margin-top: 0.5em;
-}
-
-.name-age ~ li:not(.place):not(.name-age) p{
-	margin-left: -1em;
-	padding-left: 0;
-	text-indent: 0;
-}
-
-.pirates .place,
-.time{
-	padding-left: 1em;
-}
-
-.pirates .ship p{
-	/* tighten groupings from the center */
-	margin-bottom: 0;
-	margin-top: 0;
-}
-
 /* *********************************** */
 /* STANDARD EBOOKS BOILERPLATE - DRAMA */
 /* *********************************** */
@@ -338,7 +212,7 @@ tr.together td + td{
 }
 
 /* ********************************** */
-/* CUSTOM STYLING - DRAMA */
+/* CUSTOM STYLING - DRAMA............ */
 /* ********************************** */
 [epub|type~="z3998:drama"] tfoot tr [epub|type~="z3998:signature"]{
 	padding: 0.5em 0.5em 0 0;
@@ -367,4 +241,521 @@ div [epub|type~="z3998:drama"] [epub|type~="z3998:persona"]{
 
 caption{
 	margin-bottom: 1em;
+}
+
+/* ********************************** */
+/* CUSTOM STYLING - TABLES........... */
+/* ********************************** */
+/* INTRODUCTION */
+/* Contents: List of Ships Taken by the Spanish
+Search (xhtml): Vessels Taken by the
+Search (pdf): Fepls talen by the */
+table.col-3.not-men tbody tr td{
+	font-size: 0.9em;
+	line-height: 1;
+	margin: 0;
+	padding: 0 0 0 0.5em;
+}
+
+/* Ship */
+table.col-3.not-men tbody tr td:nth-of-type(1){
+	max-width: 10em;
+	padding: 0;
+	text-align: start;
+}
+
+/* Captain */
+table.col-3.not-men tbody tr td:nth-of-type(2){
+	max-width: 10em;
+	min-width: 6em;
+	text-align: start;
+	width: fit-content;
+}
+
+/* Where */
+table.col-3.not-men tbody tr td:nth-of-type(3){
+	max-width: 40em;
+	min-width: 12em;
+	text-align: initial;
+	width: fit-content;
+}
+
+/* Oversize */
+table.col-3.not-men tbody tr:nth-of-type(1) td:nth-of-type(2),
+table.col-3.not-men tbody tr:nth-of-type(1) td:nth-of-type(3),
+table.col-3.not-men tbody tr:nth-of-type(9) td:nth-of-type(3){
+	font-size: 0.8em;
+}
+
+/* Contents: List of His Majesty’s Ships
+Search (xhtml): Ships and Vessels Employed
+Search (pdf): Ships and Veffels envploy*/
+table.not-men:nth-of-type(2) thead th{
+	font-size: 0.9em;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-align: initial;
+}
+
+table.not-men:nth-of-type(2) tbody td{
+	font-size: 0.9em;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+/* Place Where */
+table.not-men:nth-of-type(2) th:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(6) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(7) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(9) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(12) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(13) td:nth-of-type(1){
+	max-width: 10em;
+	min-width: 5.5em;
+	text-align: initial;
+}
+
+/* Rates */
+table.not-men:nth-of-type(2) th:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(5) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(6) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(7) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(9) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(10) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(12) td:nth-of-type(2){
+	max-width: 4em;
+	min-width: 2em;
+	text-align: center;
+}
+
+/* Ships */
+table.not-men:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(3),
+table.not-men:nth-of-type(2) tr:nth-of-type(2) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(3) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(4) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(5) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(6) td:nth-of-type(3),
+table.not-men:nth-of-type(2) tr:nth-of-type(7) td:nth-of-type(3),
+table.not-men:nth-of-type(2) tr:nth-of-type(8) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(9) td:nth-of-type(3),
+table.not-men:nth-of-type(2) tr:nth-of-type(10) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(11) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(12) td:nth-of-type(3),
+table.not-men:nth-of-type(2) tr:nth-of-type(13) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(14) td:nth-of-type(1){
+	max-width: 10em;
+	min-width: 5em;
+	text-align: initial;
+}
+
+/* Guns */
+table.not-men:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(4),
+table.not-men:nth-of-type(2) tr:nth-of-type(2) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(3) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(5) td:nth-of-type(3),
+table.not-men:nth-of-type(2) tr:nth-of-type(6) td:nth-of-type(4),
+table.not-men:nth-of-type(2) tr:nth-of-type(8) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(9) td:nth-of-type(4),
+table.not-men:nth-of-type(2) tr:nth-of-type(10) td:nth-of-type(3),
+table.not-men:nth-of-type(2) tr:nth-of-type(11) td:nth-of-type(2),
+table.not-men:nth-of-type(2) tr:nth-of-type(12) td:nth-of-type(4),
+table.not-men:nth-of-type(2) tr:nth-of-type(13) td:nth-of-type(3),
+table.not-men:nth-of-type(2) tr:nth-of-type(14) td:nth-of-type(2){
+	max-width: 4em;
+	min-width: 2em;
+	text-align: center;
+}
+
+/* Status */
+table.not-men:nth-of-type(2) tr:nth-of-type(1) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(2) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(3) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(4) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(5) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(6) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(7) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(9) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(10) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(11) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(12) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(13) td:last-of-type,
+table.not-men:nth-of-type(2) tr:nth-of-type(14) td:last-of-type{
+	max-width: 20em;
+	min-width: 10em;
+	text-align: initial;
+}
+
+/* Oversize */
+table.not-men:nth-of-type(2) th:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(7) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(13) td:nth-of-type(1),
+table.not-men:nth-of-type(2) tr:nth-of-type(3) td:nth-of-type(1){
+	font-size: 0.8em;
+}
+
+/* CHAPTER 3 */
+/* Contents: Pirates Killed in the Engagement
+Search (xhtml): pirates killed
+Search (pdf): Pyrates killed
+Note: Contains 2 sublists */
+ul li div ul li{
+	line-height: 1;
+}
+
+/* CHAPTER 4 */
+/* Contents: Persons Arraigned and Tried
+Search (xhtml): arraigned and
+Search (pdf): arraigned and */
+ul.men > li > p{
+	font-size: 0.9em;
+	line-height: 1;
+}
+
+/* CHAPTER 5 */
+/* Contents: Ships Taken by Rovers to Africa
+Search (xhtml): rovers returned
+Search (pdf): Rovers' returned */
+ul.not-men > li > p{
+	line-height: 1;
+	padding-bottom: 0.5em;
+	text-indent: 1em;
+}
+
+/* CHAPTER 11 */
+/* Contents: Men Living On Sierra Leone
+Search (xhtml): Occupy
+Search (pdf): Occupy*/
+table.men:first-of-type tbody tr td{
+	font-size: 0.9em;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	text-align: initial;
+}
+
+/* Man's Name */
+table.men:first-of-type tbody tr td:first-of-type{
+	max-width: 30em;
+	min-width: 5em;
+	width: fit-content;
+}
+
+/* Boats */
+table.men:first-of-type tbody tr td ~ td{
+	max-width: 15em;
+	min-width: 10em;
+	width: fit-content;
+}
+
+/* Shared boat(s) */
+table.men:first-of-type tbody tr:nth-of-type(6) td:nth-of-type(2),
+table.men:first-of-type tbody tr:nth-of-type(12) td:nth-of-type(2),
+table.men:first-of-type tbody tr:nth-of-type(20) td:nth-of-type(2){
+	padding-left: 0.5em;
+}
+
+/* Contents: Members of the Court
+Search (xhtml): court consisted
+Search (pdf): Court conliftecl */
+#the-trials-of-the-pirates div:first-of-type > ul > li > p{
+	font-size: 1em;
+	line-height: 1;
+}
+
+/* Contents: Prisoners Taken in the Ranger
+Search (xhtml): Prisoners Taken
+Search (pdf): f rifoners taken
+Note: 1 cell contains a sub-table*/
+table.col-4.men.men td{
+	font-size: 0.9em;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+/* Men’s names */
+table.col-4.men tbody tr td:first-of-type{
+	margin: 0 0.5em 0 0;
+	max-width: 13em;
+	min-width: 6em;
+	text-align: initial;
+	width: fit-content;
+}
+
+/* Ships from */
+table.col-4.men tbody tr:nth-of-type(1) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(2) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(3) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(4) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(7) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(9) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(10) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(11) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(13) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(14) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(15) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(16) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(17) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(18) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(20) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(24) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(26) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(28) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(32) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(33) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(36) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(37) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(38) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(40) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(44) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(46) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(53) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(55) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(61) td:nth-of-type(2){
+	max-width: 22em;
+	min-width: 10em;
+	text-align: initial;
+	width: fit-content;
+}
+
+/* Time when */
+table.col-4.men tbody tr:nth-of-type(1) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(2) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(3) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(4) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(5) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(6) td:nth-of-type(2),
+table.col-4.men tbody tr:nth-of-type(7) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(11) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(17) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(18) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(20) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(22) td:nth-of-type(4),
+table.col-4.men tbody tr:nth-of-type(26) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(28) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(32) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(33) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(36) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(61) td:nth-of-type(3){
+	max-width: 10em;
+	min-width: 5em;
+	text-align: right;
+	width: fit-content;
+}
+
+/* of Mr. Glyn, of Seig. Jossee */
+table.col-4.men tbody tr:nth-of-type(22) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(23) td:nth-of-type(2){
+	max-width: 10em;
+	min-width: 4em;
+	text-align: initial;
+	width: fit-content;
+}
+
+/* Sierra Leone */
+table.col-4.men tbody tr:nth-of-type(22) td:nth-of-type(2){
+	max-width: 5em;
+	min-width: 2em;
+	text-align: initial;
+	width: fit-content;
+}
+
+/* Oversize */
+table.col-4.men tbody tr:nth-of-type(36) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(61) td:nth-of-type(3),
+table.col-4.men tbody tr:nth-of-type(53) td:nth-of-type(2){
+	font-size: 0.8em;
+}
+
+/* Contents: Pirates Taken Out of the Royal Fortune
+Search (xhtml): Following pirates Taken
+Search (pdf): againft the followii^g*/
+table.col-4.men:nth-of-type(2) tbody tr td{
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+/* Men */
+table.col-4.men:nth-of-type(2) tbody tr td:first-of-type{
+	max-width: 16em;
+	min-width: 10em;
+	text-align: initial;
+	width: fit-content;
+}
+
+/* Ship */
+table.col-4.men:nth-of-type(2) tbody tr td:nth-of-type(2){
+	max-width: 20em;
+	min-width: 10em;
+	text-align: initial;
+	width: fit-content;
+}
+
+/* Date */
+table.col-4.men:nth-of-type(2) tbody tr td:nth-of-type(3){
+	max-width: 10em;
+	min-width: 4em;
+	width: fit-content;
+}
+
+/* Contents: Pirates Executed at Cape Corso Castle
+Search (xhtml): sentence, without
+Search (pdf): sentence, without*/
+table.col-3.men td{
+	font-size: 0.9em;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+/* Men’s Names */
+table.col-3.men thead tr th:first-of-type,
+table.col-3.men tbody tr td:first-of-type{
+	text-align: initial;
+}
+
+/* Years of Age */
+table.col-3.men thead tr th:nth-of-type(2),
+table.col-3.men tbody tr td:nth-of-type(2){
+	max-height: 12em;
+	min-width: 2em;
+	text-align: center;
+	width: fit-content;
+}
+
+/* Habitations */
+table.col-3.men thead tr th:nth-of-type(3),
+table.col-3.men tbody tr td:nth-of-type(3){
+	text-align: initial;
+}
+
+table.col-3.men thead tr th:nth-of-type(3){
+	padding-left: 0.5em;
+}
+
+/* Oversize */
+table.col-3.men tbody tr:nth-of-type(45) td:nth-of-type(3) span{
+	font-size: 0.8em;
+}
+
+/* Contents: Drawn Out Indentures <br>
+  Search (xhtml): exchanged the Indentures 
+  Search (pdf): exchanged the Indentures */
+#the-trials-of-the-pirates div:nth-of-type(19) > ul > li > p{
+	font-size: 0.9em;
+	line-height: 1;
+}
+
+/* ******************** */
+/* Contents: Summary of Prisoner Outcomes
+  Search (xhtml): account of the whole
+  Search (pdf): account of the whole*/
+table.col-3.not-men:nth-of-type(4) tbody tr td{
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+table.col-3.not-men:nth-of-type(4) tbody tr td:last-of-type,
+table.col-3.not-men:nth-of-type(4) tfoot tr td:last-of-type{
+	max-width: 4em;
+	min-width: 2em;
+	text-align: right;
+	width: fit-content;
+}
+
+/* Location of Death */
+table.col-3.not-men:nth-of-type(4) tbody tr:nth-of-type(6) td:nth-last-of-type(2),
+table.col-3.not-men:nth-of-type(4) tbody tr:nth-of-type(7) td:nth-last-of-type(2),
+table.col-3.not-men:nth-of-type(4) tbody tr:nth-of-type(8) td:nth-last-of-type(2),
+table.col-3.not-men:nth-of-type(4) tbody tr:nth-of-type(9) td:nth-last-of-type(2){
+	max-width: 20em;
+	min-width: 10em;
+	width: fit-content;
+}
+
+/* Total */
+table.col-3.not-men:nth-of-type(4) tfoot tr td:first-of-type{
+	padding-right: 0.5em;
+	text-align: right;
+}
+
+table.col-3.not-men:nth-of-type(4) tfoot tr td:last-of-type{
+	text-decoration: overline;
+}
+
+/* Kill'd Dy'd */
+table.col-3.not-men:nth-of-type(4) tbody tr:nth-of-type(6) td:first-of-type,
+table.col-3.not-men:nth-of-type(4) tbody tr:nth-of-type(8) td:first-of-type{
+	padding-right: 0.5em;
+}
+
+/* CHAPTER 15 */
+/* Contents: Court Members
+Search (xhtml): following gentlemen
+PDF: following Gentlemen */
+ul:nth-child(41) > li > p{
+	font-size: 0.9em;
+	line-height: 1;
+	padding-left: 2em;
+	text-indent: -2em;
+}
+
+/* Contents: Prisoners Counselled by Auchmuta
+Search (xhtml): Auchmuta
+Search (pdf): Auchmuta
+Note: Two grouping descriptions.*/
+table.col-3.men{
+	font-size: 0.9em;
+	line-height: 1;
+}
+
+table.col-3.men:first-of-type td,
+table.col-3.men:first-of-type th{
+	margin: 0;
+	padding: 0;
+	text-align: initial;
+}
+
+table.col-3.men:first-of-type td:only-child{
+	padding: 0.5em 0 0.5em 0.5em;
+}
+
+/* Prisoners’ Names */
+table.col-3.men:first-of-type thead tr th:nth-of-type(1),
+table.col-3.men:first-of-type tbody tr td:nth-of-type(1){
+	max-width: 27em;
+	padding-right: 0.5em;
+	width: fit-content;
+}
+
+/* Age */
+table.col-3.men:first-of-type thead th:nth-of-type(2),
+table.col-3.men:first-of-type tbody tr td:nth-of-type(2){
+	max-width: 4em;
+	min-width: 3em;
+	text-align: center;
+	width: fit-content;
+}
+
+/* Place of Birth */
+table.col-3.men:first-of-type thead tr th:nth-of-type(3),
+table.col-3.men:first-of-type tbody tr td:nth-of-type(3){
+	max-width: 25em;
+	padding-left: 0.5em;
+	width: fit-content;
+}
+
+/* Oversize */
+table.col-3.men:first-of-type tbody tr:nth-of-type(1) td:nth-of-type(1),
+table.col-3.men:first-of-type tbody tr:nth-of-type(21) td:nth-of-type(1),
+table.col-3.men:first-of-type tbody tr:nth-of-type(28) td:nth-of-type(1),
+table.col-3.men:first-of-type tbody tr:nth-of-type(34) td:nth-of-type(1){
+	font-size: 0.8em;
 }
