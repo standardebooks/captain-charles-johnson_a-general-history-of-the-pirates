@@ -9,7 +9,11 @@ section{
 }
 
 table{
-	margin: 1em auto 1em auto;
+	margin: 1em auto;
+}
+
+caption{
+	margin-bottom: 1em;
 }
 
 table td:last-child{
@@ -40,10 +44,6 @@ p cite{
 	display: inline;
 }
 
-div{
-	margin: 1em 0 1em 0;
-}
-
 header b{
 	font-size: 1.1em;
 }
@@ -65,12 +65,6 @@ header b{
 
 [epub|type~="z3998:essay"] > p:first-of-type{
 	margin-top: 0;
-}
-
-table:not([epub|type~="z3998:drama"]) tbody tr td:nth-child(2),
-table:not([epub|type~="z3998:drama"]) tfoot tr td:nth-child(2){
-	/* Ch XI - ...the account of the whole stands thus... */
-	text-align: right;
 }
 
 /* *************************************** */
@@ -176,11 +170,10 @@ table[epub|type~="z3998:drama"]{
 
 [epub|type~="z3998:drama"] td:last-child{
 	padding-right: 0;
-	text-align: initial;
 }
 
 [epub|type~="z3998:drama"] td:first-child{
-	padding-left: 2em;
+	padding-left: 0;
 }
 
 [epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
@@ -194,26 +187,23 @@ table[epub|type~="z3998:drama"]{
 	font-variant: all-small-caps;
 }
 
+/* ********************************** */
+/* CUSTOM STYLING - DRAMA............ */
+/* ********************************** */
+[epub|type~="z3998:drama"] td:last-child{
+	text-align: initial;
+	font-variant-numeric: normal;
+}
+
 tr.together{
 	break-inside: avoid;
 }
 
-tr.together td{
-	padding: 0 0.5em 0 0;
+tr.together td[epub|type~="z3998:persona"]{
 	vertical-align: middle;
+	border-right: 1px solid;
 }
 
-tr.together td + td{
-	border-left: 1px solid;
-}
-
-[epub|type~="z3998:drama"] .together td:last-child{
-	padding-left: .5em;
-}
-
-/* ********************************** */
-/* CUSTOM STYLING - DRAMA............ */
-/* ********************************** */
 [epub|type~="z3998:drama"] tfoot tr [epub|type~="z3998:signature"]{
 	padding: 0.5em 0.5em 0 0;
 	text-align: right;
@@ -228,19 +218,6 @@ tr.together td + td{
 	font-size: 1.1em;
 	font-variant: small-caps;
 	margin-top: 0.5em;
-}
-
-article,
-div,
-div [epub|type~="z3998:drama"] [epub|type~="z3998:persona"]{
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-caption{
-	margin-bottom: 1em;
 }
 
 /* ********************************** */
