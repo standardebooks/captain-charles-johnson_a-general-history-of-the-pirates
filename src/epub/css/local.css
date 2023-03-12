@@ -225,152 +225,44 @@ tr.together td[epub|type~="z3998:persona"]{
 /* Contents: List of Ships Taken by the Spanish
 Search (xhtml): Vessels Taken by the
 Search (pdf): Fepls talen by the */
-table.col-3.not-men tbody tr td{
+#introduction > table{
 	font-size: 0.9em;
 	line-height: 1;
-	margin: 0;
-	padding: 0 0 0 0.5em;
 }
 
-/* Ship */
-table.col-3.not-men tbody tr td:nth-of-type(1){
-	max-width: 10em;
-	padding: 0;
-	text-align: start;
-}
-
-/* Captain */
-table.col-3.not-men tbody tr td:nth-of-type(2){
-	max-width: 10em;
-	min-width: 6em;
-	text-align: start;
-	width: fit-content;
-}
-
-/* Where */
-table.col-3.not-men tbody tr td:nth-of-type(3){
-	max-width: 40em;
-	min-width: 12em;
+#introduction td{
+	padding-left: 0.5em;
 	text-align: initial;
-	width: fit-content;
 }
 
-/* Oversize */
-table.col-3.not-men tbody tr:nth-of-type(1) td:nth-of-type(2),
-table.col-3.not-men tbody tr:nth-of-type(1) td:nth-of-type(3),
-table.col-3.not-men tbody tr:nth-of-type(9) td:nth-of-type(3){
-	font-size: 0.8em;
+#introduction td:first-child{
+	padding-left: 0;
 }
 
 /* Contents: List of His Majesty’s Ships
 Search (xhtml): Ships and Vessels Employed
 Search (pdf): Ships and Veffels envploy */
-table.not-men:nth-of-type(2) thead th{
-	font-size: 0.9em;
-	font-weight: normal;
-	margin: 0;
-	padding: 0;
-	text-align: initial;
-}
-
-table.not-men:nth-of-type(2) tbody td{
-	font-size: 0.9em;
-	line-height: 1;
-	margin: 0;
-	padding: 0;
-}
-
-/* Place Where */
-table.not-men:nth-of-type(2) th:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(6) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(7) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(9) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(12) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(13) td:nth-of-type(1){
-	max-width: 10em;
-	min-width: 5.5em;
-	text-align: initial;
-}
 
 /* Rates */
-table.not-men:nth-of-type(2) th:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(5) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(6) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(7) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(9) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(10) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(12) td:nth-of-type(2){
-	max-width: 4em;
-	min-width: 2em;
+#introduction > table:nth-of-type(2) .rates{
+	padding-left: 0;
 	text-align: center;
 }
 
 /* Ships */
-table.not-men:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(3),
-table.not-men:nth-of-type(2) tr:nth-of-type(2) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(3) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(4) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(5) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(6) td:nth-of-type(3),
-table.not-men:nth-of-type(2) tr:nth-of-type(7) td:nth-of-type(3),
-table.not-men:nth-of-type(2) tr:nth-of-type(8) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(9) td:nth-of-type(3),
-table.not-men:nth-of-type(2) tr:nth-of-type(10) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(11) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(12) td:nth-of-type(3),
-table.not-men:nth-of-type(2) tr:nth-of-type(13) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(14) td:nth-of-type(1){
-	max-width: 10em;
-	min-width: 5em;
-	text-align: initial;
+#introduction > table:nth-of-type(2) .ships{
+	padding-left: 0.5em;
 }
 
 /* Guns */
-table.not-men:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(4),
-table.not-men:nth-of-type(2) tr:nth-of-type(2) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(3) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(5) td:nth-of-type(3),
-table.not-men:nth-of-type(2) tr:nth-of-type(6) td:nth-of-type(4),
-table.not-men:nth-of-type(2) tr:nth-of-type(8) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(9) td:nth-of-type(4),
-table.not-men:nth-of-type(2) tr:nth-of-type(10) td:nth-of-type(3),
-table.not-men:nth-of-type(2) tr:nth-of-type(11) td:nth-of-type(2),
-table.not-men:nth-of-type(2) tr:nth-of-type(12) td:nth-of-type(4),
-table.not-men:nth-of-type(2) tr:nth-of-type(13) td:nth-of-type(3),
-table.not-men:nth-of-type(2) tr:nth-of-type(14) td:nth-of-type(2){
-	max-width: 4em;
-	min-width: 2em;
-	text-align: center;
+#introduction > table:nth-of-type(2) .guns{
+	padding-left: 0;
+	text-align: right;
 }
 
 /* Status */
-table.not-men:nth-of-type(2) tr:nth-of-type(1) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(2) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(3) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(4) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(5) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(6) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(7) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(9) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(10) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(11) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(12) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(13) td:last-of-type,
-table.not-men:nth-of-type(2) tr:nth-of-type(14) td:last-of-type{
+#introduction > table:nth-of-type(2) td:last-child{
 	max-width: 20em;
-	min-width: 10em;
-	text-align: initial;
-}
-
-/* Oversize */
-table.not-men:nth-of-type(2) th:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(7) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(13) td:nth-of-type(1),
-table.not-men:nth-of-type(2) tr:nth-of-type(3) td:nth-of-type(1){
-	font-size: 0.8em;
 }
 
 /* CHAPTER 3 */
