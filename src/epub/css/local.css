@@ -404,62 +404,33 @@ Search (pdf): sentence, without */
 /* Contents: Court Members
 Search (xhtml): following gentlemen
 PDF: following Gentlemen */
-ul:nth-child(41) > li > p{
+#chapter-15 > ul{
 	font-size: 0.9em;
 	line-height: 1;
-	padding-left: 2em;
-	text-indent: -2em;
+	padding-left: 0;
 }
 
 /* Contents: Prisoners Counselled by Auchmuta
 Search (xhtml): Auchmuta
 Search (pdf): Auchmuta
 Note: Two grouping descriptions. */
-table.col-3.men{
+#chapter-15 > table{
 	font-size: 0.9em;
 	line-height: 1;
 }
 
-table.col-3.men:first-of-type td,
-table.col-3.men:first-of-type th{
-	margin: 0;
-	padding: 0;
+#chapter-15 th,
+#chapter-15 td{
 	text-align: initial;
 }
 
-table.col-3.men:first-of-type td:only-child{
-	padding: 0.5em 0 0.5em 0.5em;
-}
-
-/* Prisoners’ Names */
-table.col-3.men:first-of-type thead tr th:nth-of-type(1),
-table.col-3.men:first-of-type tbody tr td:nth-of-type(1){
-	max-width: 27em;
-	padding-right: 0.5em;
-	width: fit-content;
-}
-
-/* Age */
-table.col-3.men:first-of-type thead th:nth-of-type(2),
-table.col-3.men:first-of-type tbody tr td:nth-of-type(2){
-	max-width: 4em;
-	min-width: 3em;
+#chapter-15 th:nth-child(2),
+#chapter-15 td:nth-child(2){
 	text-align: center;
-	width: fit-content;
 }
 
-/* Place of Birth */
-table.col-3.men:first-of-type thead tr th:nth-of-type(3),
-table.col-3.men:first-of-type tbody tr td:nth-of-type(3){
-	max-width: 25em;
-	padding-left: 0.5em;
-	width: fit-content;
-}
-
-/* Oversize */
-table.col-3.men:first-of-type tbody tr:nth-of-type(1) td:nth-of-type(1),
-table.col-3.men:first-of-type tbody tr:nth-of-type(21) td:nth-of-type(1),
-table.col-3.men:first-of-type tbody tr:nth-of-type(28) td:nth-of-type(1),
-table.col-3.men:first-of-type tbody tr:nth-of-type(34) td:nth-of-type(1){
-	font-size: 0.8em;
+#chapter-15 td[colspan]{
+	padding: 0.5em 0 0.5em 1em;
+	text-indent: -0.5em;
+	max-width: 28em;
 }
