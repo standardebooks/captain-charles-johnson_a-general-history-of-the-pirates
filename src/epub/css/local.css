@@ -27,7 +27,6 @@ td:last-child{
 
 header{
 	font-variant: small-caps;
-	line-height: 1;
 	margin: 1em;
 	text-align: center;
 }
@@ -135,19 +134,12 @@ footer [epub|type~="z3998:signature"] ~ [epub|type~="z3998:signature"]{
 /* CUSTOM STYLING - UL.................... */
 /* *************************************** */
 ul{
-	hyphens: none;
-	-epub-hyphens: none;
 	list-style-type: none;
+	padding-left: 0;
 }
 
-ul > li > p{
-	padding-left: 1em;
-	text-indent: -1em;
-}
-
-ul header{
-	font-variant: small-caps;
-	font-weight: bold;
+ul p:first-child{
+	text-indent: 1em;
 }
 
 /* *********************************** */
@@ -265,34 +257,6 @@ Search (pdf): Ships and Veffels envploy */
 	max-width: 20em;
 }
 
-/* CHAPTER 3 */
-/* Contents: Pirates Killed in the Engagement
-Search (xhtml): pirates killed
-Search (pdf): Pyrates killed
-Note: Contains 2 sublists */
-ul li div ul li{
-	line-height: 1;
-}
-
-/* CHAPTER 4 */
-/* Contents: Persons Arraigned and Tried
-Search (xhtml): arraigned and
-Search (pdf): arraigned and */
-ul.men > li > p{
-	font-size: 0.9em;
-	line-height: 1;
-}
-
-/* CHAPTER 5 */
-/* Contents: Ships Taken by Rovers to Africa
-Search (xhtml): rovers returned
-Search (pdf): Rovers' returned */
-ul.not-men > li > p{
-	line-height: 1;
-	padding-bottom: 0.5em;
-	text-indent: 1em;
-}
-
 /* CHAPTER 11 */
 .person{
 	font-size: 1.1em;
@@ -313,13 +277,6 @@ Search (pdf): Occupy */
 #chapter-11 > table td[rowspan]{
 	border-left: 1px solid;
 	padding-left: 0.5em;
-}
-
-/* Contents: Members of the Court
-Search (xhtml): court consisted
-Search (pdf): Court conliftecl */
-#the-trials-of-the-pirates div:first-of-type > ul > li > p{
-	font-size: 1em;
 }
 
 /* Contents: Prisoners Taken in the Ranger
@@ -365,14 +322,6 @@ Search (pdf): sentence, without */
 	font-size: 0.8em;
 }
 
-/* Contents: Drawn Out Indentures <br>
-  Search (xhtml): exchanged the Indentures 
-  Search (pdf): exchanged the Indentures */
-#the-trials-of-the-pirates div:nth-of-type(19) > ul > li > p{
-	font-size: 0.9em;
-	line-height: 1;
-}
-
 /* ******************** */
 /* Contents: Summary of Prisoner Outcomes
   Search (xhtml): account of the whole
@@ -401,15 +350,6 @@ Search (pdf): sentence, without */
 }
 
 /* CHAPTER 15 */
-/* Contents: Court Members
-Search (xhtml): following gentlemen
-PDF: following Gentlemen */
-#chapter-15 > ul{
-	font-size: 0.9em;
-	line-height: 1;
-	padding-left: 0;
-}
-
 /* Contents: Prisoners Counselled by Auchmuta
 Search (xhtml): Auchmuta
 Search (pdf): Auchmuta
