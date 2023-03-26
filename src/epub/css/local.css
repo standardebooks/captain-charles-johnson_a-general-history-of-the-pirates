@@ -114,19 +114,14 @@ footer [epub|type~="z3998:signature"] ~ [epub|type~="z3998:signature"]{
 /* *************************************** */
 .articles header{
 	font-variant: normal;
-	text-align: center;
 }
 
 .articles ol{
 	list-style-type: upper-roman;
-}
-
-.articles li{
 	font-style: italic;
 }
 
 .aside{
-	display: inline;
 	font-style: normal;
 }
 
