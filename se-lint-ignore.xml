@@ -12,4 +12,10 @@
 			<reason>latinism</reason>
 		</ignore>
 	</file>
+	<file path="local.css">
+		<ignore>
+			<code>c-009</code>
+			<reason>Overriding some data table styles for drama tables to keep the standard SE drama styling intact.</reason>
+		</ignore>
+	</file>
 </se-lint-ignore>
