@@ -117,8 +117,8 @@ footer [epub|type~="z3998:signature"] ~ [epub|type~="z3998:signature"]{
 }
 
 .articles ol{
-	list-style-type: upper-roman;
 	font-style: italic;
+	list-style-type: upper-roman;
 }
 
 .aside{
@@ -229,7 +229,6 @@ Search (pdf): Fepls talen by the */
 /* Contents: List of His Majesty’s Ships
 Search (xhtml): Ships and Vessels Employed
 Search (pdf): Ships and Veffels envploy */
-
 /* Rates */
 #introduction > table:nth-of-type(2) .rates{
 	padding-left: 0;
@@ -365,7 +364,7 @@ Note: Two grouping descriptions. */
 }
 
 #chapter-15 td[colspan]{
+	max-width: 28em;
 	padding: 0.5em 0 0.5em 1em;
 	text-indent: -0.5em;
-	max-width: 28em;
 }
