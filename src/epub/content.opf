@@ -2,8 +2,8 @@
 <package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="se: https://standardebooks.org/vocab/1.0" unique-identifier="uid" version="3.0" xml:lang="en-US">
 	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 		<dc:identifier id="uid">url:https://standardebooks.org/ebooks/captain-charles-johnson/a-general-history-of-the-pirates</dc:identifier>
-		<dc:date>1900-01-01T00:00:00Z</dc:date>
-		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
+		<dc:date>2023-03-30T20:17:28Z</dc:date>
+		<meta property="dcterms:modified">2023-03-30T20:17:28Z</meta>
 		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
 		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
 		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
@@ -42,7 +42,7 @@
 		<meta property="se:subject">Nonfiction</meta>
 		<dc:description id="description">The lives and stories of the daring pirate outlaws who terrorized the Atlantic Ocean and Caribbean Sea in the 18th century.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			&lt;p&gt;During the Golden Age of Piracy, a writer naming himself &lt;a href="https://standardebooks.org/ebooks/captain-charles-johnson"&gt;“Captain” Charles Johnson&lt;/a&gt; introduced London readers to the denizens of a savage world just beyond their shores. These pirates took up residence in readers’ imaginations, where they’ve been a mainstay of popular culture ever since.&lt;/p&gt;
+			&lt;p&gt;During the Golden Age of Piracy, a writer calling himself &lt;a href="https://standardebooks.org/ebooks/captain-charles-johnson"&gt;“Captain” Charles Johnson&lt;/a&gt; introduced London readers to the denizens of a savage world just beyond their shores. These pirates took up residence in readers’ imaginations, where they’ve been a mainstay of popular culture ever since.&lt;/p&gt;
 			&lt;p&gt;Pirate history especially resonates for American readers, as what would become the wild frontier of the American west began in the piratical eastern seaboard of Colonial times. When revolutionaries gathered in Philadelphia to found a continental republic, it was with a memory of the Pirate Republic founded eighty years earlier in Nassau and its attempt at self-government, ship-board democracy, and defiance of empire. When Grant arrived in Virginia to restore thirteen breakaway states to that republic, he came with a memory of Woodes Rogers’ arrival in the Bahamas to reclaim those islands for the Empire. The legacy of triangular trade, on which these pirates preyed and depended, has continued to play out across the nation’s history.&lt;/p&gt;
 			&lt;p&gt;For its contemporary readers piracy was serious business, and this book describes their exploits with a journalistic spirit. Johnson writes history, but history in the present tense. He editorializes, shares his personal knowledge of seamanship, and offers practical advice both to maritime merchants and to powerful policymakers. He draws stories from interviews with living pirates, draws from public and legal records, and develops historical context, bringing his own social analysis to bear. In some parts, he presents human interest stories as tabloid journalism with “a little the air of a novel,” recounted mostly because they’re interesting.&lt;/p&gt;
 			&lt;p&gt;And they &lt;em&gt;are&lt;/em&gt; interesting: the bored gentleman and inept pirate Stede Bonnet as he arrives unarmed to a battle of wits with the experienced, savage, and polygamous Edward Teach; Teach, who said of this crew that “if he did not now and then kill one of them, they would forget who he was”; the scandalous pirate-thruple of Mary Read, Anne Bonny, and “Calico” Jack Rackham. To the present day, in countless works, across media, Johnson’s pirates and the world they inhabit live on.&lt;/p&gt;
@@ -51,8 +51,8 @@
 		<dc:source>https://www.gutenberg.org/ebooks/40580</dc:source>
 		<dc:source>https://archive.org/details/generalhistoryof00john</dc:source>
 		<meta property="se:production-notes">“Captain” retained in the author name as it is believed to be fictional, created by the author and to prevent confusion with another author having the same name, writing in the same subject area.</meta>
-		<meta property="se:word-count">WORD_COUNT</meta>
-		<meta property="se:reading-ease.flesch">READING_EASE</meta>
+		<meta property="se:word-count">126344</meta>
+		<meta property="se:reading-ease.flesch">37.85</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/A_General_History_of_the_Pirates</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/captain-charles-johnson_a-general-history-of-the-pirates</meta>
 		<dc:creator id="author">Captain Charles Johnson</dc:creator>
