@@ -47,14 +47,12 @@ header b{
 	font-size: 1.1em;
 }
 
-[epub|type~="z3998:letter"] header [epub|type~="subtitle"]{
-	/* Ch IX - Copy of Indenture Subtitle */
+#chapter-11 [epub|type~="z3998:letter"] header p + p:not([epub|type]){
+	/* Ch XI - Copy of the Indenture Subtitle */
 	font-variant: normal;
-	line-height: 1.2;
-	margin: 0.5em 0 0.5em 0;
+	margin: 1em 0;
 	padding: 0;
 	text-align: initial;
-	text-indent: -1em;
 }
 
 [epub|type~="z3998:essay"] header p{
@@ -96,13 +94,7 @@ header b{
 /* *************************************** */
 header [epub|type~="z3998:signature"]{
 	margin-top: 1em;
-	padding-left: 5%;
 	text-align: initial;
-}
-
-footer [epub|type~="z3998:signature"] ~ [epub|type~="z3998:signature"]{
-	/* multiple signatures */
-	line-height: 1;
 }
 
 /* *************************************** */
@@ -126,11 +118,6 @@ footer [epub|type~="z3998:signature"] ~ [epub|type~="z3998:signature"]{
 /* *************************************** */
 ul{
 	list-style-type: none;
-	padding-left: 0;
-}
-
-ul p:first-child{
-	text-indent: 1em;
 }
 
 /* *********************************** */
@@ -192,58 +179,48 @@ tr.together td[epub|type~="z3998:persona"]{
 }
 
 [epub|type~="z3998:drama"] tfoot tr [epub|type~="z3998:signature"]{
-	padding: 0.5em 0.5em 0 0;
+	padding-top: 1em;
 	text-align: right;
 }
 
 [epub|type~="z3998:drama"] tfoot tr [epub|type~="z3998:signature"] abbr{
-	display: inline;
-	margin: 0 0 0 1em;
+	margin-left: 1em;
 }
 
 /* ********************************** */
 /* CUSTOM STYLING - TABLES........... */
 /* ********************************** */
 /* INTRODUCTION */
-/* Contents: List of Ships Taken by the Spanish
-Search (xhtml): Vessels Taken by the
-Search (pdf): Fepls talen by the */
-#introduction > table{
-	font-size: 0.9em;
-	line-height: 1;
-}
 
 #introduction td{
-	padding-left: 0.5em;
 	text-align: initial;
 }
 
-#introduction td:first-child{
-	padding-left: 0;
+#introduction td + td{
+	padding-left: 0.5em;
 }
 
 /* Contents: List of His Majesty’s Ships
 Search (xhtml): Ships and Vessels Employed
 Search (pdf): Ships and Veffels envploy */
 /* Rates */
-#introduction > table:nth-of-type(2) .rates{
+#introduction table:nth-of-type(2) .rates{
 	padding-left: 0;
 	text-align: center;
 }
 
 /* Ships */
-#introduction > table:nth-of-type(2) .ships{
+#introduction table:nth-of-type(2) .ships{
 	padding-left: 0.5em;
 }
 
 /* Guns */
-#introduction > table:nth-of-type(2) .guns{
-	padding-left: 0;
+#introduction table:nth-of-type(2) .guns{
 	text-align: right;
 }
 
 /* Status */
-#introduction > table:nth-of-type(2) td:last-child{
+#introduction table:nth-of-type(2) td:last-child{
 	max-width: 20em;
 }
 
@@ -251,20 +228,10 @@ Search (pdf): Ships and Veffels envploy */
 .person{
 	font-size: 1.1em;
 	font-variant: small-caps;
-	margin-top: 0.5em;
-}
-
-/* Contents: Men Living On Sierra Leone
-Search (xhtml): Occupy
-Search (pdf): Occupy */
-#chapter-11 > table td{
-	font-size: 0.9em;
-	line-height: 1;
-	text-align: start;
 }
 
 /* Shared boat(s) */
-#chapter-11 > table td[rowspan]{
+#chapter-11 table:not([epub|type]) td[rowspan]{
 	border-left: 1px solid;
 	padding-left: 0.5em;
 }
@@ -276,10 +243,8 @@ Search (pdf): f rifoners taken */
 Search (xhtml): Following pirates Taken
 Search (pdf): againft the followii^g */
 #the-trials-of-the-pirates > table.men td{
-	font-size: 0.9em;
-	line-height: 1;
-	padding: 0 0 0 1em;
-	text-align: start;
+	padding-left: 1em;
+	text-align: initial;
 }
 
 /* Men’s names */
@@ -307,15 +272,10 @@ Search (pdf): sentence, without */
 	text-align: initial;
 }
 
-/* Oversize */
-#the-trials-of-the-pirates > table.men:nth-of-type(3) span{
-	font-size: 0.8em;
-}
-
 /* ******************** */
 /* Contents: Summary of Prisoner Outcomes
-  Search (xhtml): account of the whole
-  Search (pdf): account of the whole */
+   Search (xhtml): account of the whole
+   Search (pdf): account of the whole */
 #the-trials-of-the-pirates > table:nth-of-type(4) td:last-child{
 	text-align: right;
 }
@@ -344,11 +304,6 @@ Search (pdf): sentence, without */
 Search (xhtml): Auchmuta
 Search (pdf): Auchmuta
 Note: Two grouping descriptions. */
-#chapter-15 > table{
-	font-size: 0.9em;
-	line-height: 1;
-}
-
 #chapter-15 th,
 #chapter-15 td{
 	text-align: initial;
