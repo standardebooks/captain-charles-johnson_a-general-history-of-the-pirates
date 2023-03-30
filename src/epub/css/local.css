@@ -43,10 +43,6 @@ abbr[epub|type~="se:era"]{
 /* *************************************** */
 /* CUSTOM STYLING - GENERAL............... */
 /* *************************************** */
-p cite{
-	display: inline;
-}
-
 header b{
 	font-size: 1.1em;
 }
