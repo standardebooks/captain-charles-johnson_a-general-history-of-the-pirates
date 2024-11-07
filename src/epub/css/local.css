@@ -138,7 +138,7 @@ table[epub|type~="z3998:drama"]{
 }
 
 [epub|type~="z3998:drama"] td{
-	padding: 0.5em;
+	padding: .5em;
 	vertical-align: top;
 }
 
@@ -196,7 +196,7 @@ tr.together td[epub|type~="z3998:persona"]{
 }
 
 #introduction td + td{
-	padding-left: 0.5em;
+	padding-left: .5em;
 }
 
 /* Contents: List of His Majesty’s Ships
@@ -210,7 +210,7 @@ Search (pdf): Ships and Veffels envploy */
 
 /* Ships */
 #introduction table:nth-of-type(2) .ships{
-	padding-left: 0.5em;
+	padding-left: .5em;
 }
 
 /* Guns */
@@ -232,7 +232,7 @@ Search (pdf): Ships and Veffels envploy */
 /* Shared boat(s) */
 #chapter-11 table:not([epub|type]) td[rowspan]{
 	border-left: 1px solid;
-	padding-left: 0.5em;
+	padding-left: .5em;
 }
 
 /* Contents: Prisoners Taken in the Ranger
@@ -267,7 +267,7 @@ Search (pdf): sentence, without */
 
 /* Habitations */
 #the-trials-of-the-pirates > table.men:nth-of-type(3) th:last-child{
-	padding-left: 0.5em;
+	padding-left: .5em;
 	text-align: initial;
 }
 
@@ -281,7 +281,7 @@ Search (pdf): sentence, without */
 
 /* Total */
 #the-trials-of-the-pirates > table:nth-of-type(4) tfoot td:first-child{
-	padding-right: 0.5em;
+	padding-right: .5em;
 	text-align: right;
 }
 
@@ -291,7 +291,7 @@ Search (pdf): sentence, without */
 
 /* Kill'd Dy'd */
 #the-trials-of-the-pirates > table:nth-of-type(4) td[rowspan]{
-	padding-right: 0.5em;
+	padding-right: .5em;
 }
 
 #the-trials-of-the-pirates > table:nth-of-type(4) td[rowspan] + td{
@@ -315,6 +315,6 @@ Note: Two grouping descriptions. */
 
 #chapter-15 td[colspan]{
 	max-width: 28em;
-	padding: 0.5em 0 0.5em 1em;
+	padding: .5em 0 .5em 1em;
 	text-indent: -0.5em;
 }
