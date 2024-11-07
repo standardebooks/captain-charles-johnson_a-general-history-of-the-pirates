@@ -44,7 +44,7 @@ abbr[epub|type~="se:era"]{
 /* CUSTOM STYLING - GENERAL............... */
 /* *************************************** */
 header b{
-	font-size: 1.1em;
+	font-size: larger;
 }
 
 #chapter-11 [epub|type~="z3998:letter"] header p + p:not([epub|type]){
@@ -56,7 +56,7 @@ header b{
 }
 
 [epub|type~="z3998:essay"] header p{
-	font-size: 1.1em;
+	font-size: larger;
 	padding-top: 1em;
 }
 
@@ -225,7 +225,7 @@ Search (pdf): Ships and Veffels envploy */
 
 /* CHAPTER 11 */
 .person{
-	font-size: 1.1em;
+	font-size: larger;
 	font-variant: small-caps;
 }
 
