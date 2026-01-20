@@ -52,7 +52,7 @@
 		<dc:source>https://www.gutenberg.org/ebooks/40580</dc:source>
 		<dc:source>https://archive.org/details/generalhistoryof00john</dc:source>
 		<meta property="se:production-notes">“Captain” retained in the author name as it is believed to be fictional, created by the author and to prevent confusion with another author having the same name, writing in the same subject area.</meta>
-		<meta property="se:word-count">126340</meta>
+		<meta property="se:word-count">124908</meta>
 		<meta property="se:reading-ease.flesch">39.07</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/A_General_History_of_the_Pirates</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/captain-charles-johnson_a-general-history-of-the-pirates</meta>
