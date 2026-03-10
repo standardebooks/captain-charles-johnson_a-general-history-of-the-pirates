@@ -2,6 +2,9 @@
 <se-lint-ignore>
 	<file path="local.css">
 		<ignore code="c-009">
+			<line>145</line>
+			<line>167</line>
+			<line>325</line>
 			<reason>Overriding some data table styles for drama tables to keep the standard SE drama styling intact.</reason>
 		</ignore>
 	</file>
