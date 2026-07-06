@@ -55,7 +55,7 @@
 		<meta property="schema:wordCount">124908</meta>
 		<meta property="schema:educationalLevel">39.07</meta>
 		<link href="https://en.wikipedia.org/wiki/A_General_History_of_the_Pirates" rel="schema:sameAs"/>
-		<meta property="schema:workExample" id="vcs-repository">schema:workExample</meta>
+		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
 		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
 		<link href="https://github.com/standardebooks/captain-charles-johnson_a-general-history-of-the-pirates" refines="#vcs-repository" rel="schema:codeRepository"/>
 		<dc:creator id="author">Captain Charles Johnson</dc:creator>
